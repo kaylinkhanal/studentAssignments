@@ -2,6 +2,8 @@ const name = 'ram thapa'
 
 //Q1. Expected output:
 // ['thapa','ram']
+const output = name.split('').reverse();
+console.log(output)
 
 
 
@@ -15,3 +17,4 @@ const name = 'ram thapa'
 // {
     // username: 'Ram Thapa'
 // },
+
