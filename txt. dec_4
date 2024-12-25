@@ -1,0 +1,154 @@
+-> VS code
+-> nodejs install
+
+
+
+JS PLATFORM:
+
+  
+WEB (MERN, MEAN, MEVN, ~Svelte )
+react----      Netflix,           node    -paypal
+              Tesla,                      -linkedin
+              Reddit,                     -nasa
+              uber,                       -netflix
+              airbnb,                     -uber
+DESKTOP (Electron, React Native Windows)
+electron - Skype       react native windows - Instagram
+         
+Teams                            - Discord
+VSCode                           - Xbox
+Discord
+Slack
+
+
+    
+Mobile
+React Native- Instagram
+            
+Discord
+Tesla
+Smartwatch- Bangle.js
+
+SmartTV - smarttvjs
+
+
+
+History:
+    -> 1995 ---> javascript (Programming language) ---> Brenden Eich 
+    -> 2009 ---> nodejs (BE)   ---> Rayn Dahl
+    -> 2010 ---> angularjs(FE)
+    -> 2012 ---> typescript (Programming language) ----> microsoft
+    -> 2013 ---> react(FE)
+    -> 2014 ---> vuejs(FE)
+    -> 2016 ---> svelte(FE)
+    -> 2016 ---> angular(FE)
+    -> 2020 ----> deno (BE) ----> Rayn Dahl
+
+
+----> DONT BE A FANBOY OF ANY FRAMEWORKS/LIBRARIES
+
+
+KITCHEN -->waiter ----> pizza
+
+
+
+PYTHON----> calcuation
+NODEJS---> no of hits/sec 
+      ---> lightweight
+
+
+
+
+   ######   notes ::::: ####
+
+
+** is javascript synchronous or asynchronous?
+--> JavaScript is both synchronous and asynchronous
+
+
+
+** is javascript single threaded or multi threaded?
+--> JavaScript is a single-threaded language
+
+JavaScript is single-threaded because it has one call stack and one memory heap, and it executes code in order. This means that only one piece of code can be executed at a time.
+
+** is javascript dynamically typed or statically  typed language?
+
+--> JavaScript is a dynamically typed language
+
+** what is varaibles and constants 
+-->  A variable's value can change during a program's execution. Variables are often represented by small letters, like x, y, or a, but can also be derived from other languages.
+
+
+** difference between let, var, const?
+
+
+
+Property        Var                     Let                          Const
+
+Scope	        Function scoped       	Block scoped        	     Block scoped
+Updation	    Mutable	                 Mutable	                 Immutable
+Redeclaration	Can be redeclared	    Cannot be redeclared	     Cannot be redeclared
+Hoisting	    Hoisted at top	        Hoisted at top	             Hoisted at top
+Origins     	Pre ES2015	            ES2015(ES6)	                 ES2015(ES6)
+Support	        Supported in the old    Not supported in the         Not supported in the old
+                version of Browser	   	old version of the Browser   version of the Browser
+
+
+
+
+
+--------////////////---------
+----------------Array----------------- 
+  
+An array in JavaScript is a type of global object used to store data. Arrays can store multiple values in a single variable, which can condense and organize our code. JavaScript provides many built-in methods to work with arrays, including mutator, accessor, and iteration methods.
+
+creat an Array 
+let car = ["bmw" , "scarpio", "mahindra"]
+
+
+Access array Elements
+ console.log(car[0]);  // output : bmw
+
+Add an Element
+ car.pus("toyoto) 
+
+Remove the element
+ car.pop();
+ console.log(car);
+
+loop through the array
+ for (let i = 0; i < car.length; i++){
+    console.log(car[i]);
+ }
+
+
+--------////////////---------
+----------------Object----------------- 
+
+ an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc.
+
+// Create an Object
+const person = {
+   Add Properties; 
+};
+
+// Add Properties
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue"
+
+
+
+imp =-----
+ string => Immutable
+ array => mutable
+
+
+  Array methods
+   concat() : joins multiple arays & returns result
+
+   unshift() : add to start
+
+   shift() :  delete from start & return
