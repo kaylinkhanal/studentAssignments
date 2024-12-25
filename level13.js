@@ -2,6 +2,8 @@ const name = 'ram thapa'
 
 //Q1. Expected output:
 // ['thapa','ram']
+const new = name.split("");
+console.log(new);
 
 
 
