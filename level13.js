@@ -9,7 +9,7 @@ console.log(name.split(' ').reverse());
 //Q2. Expected output
 //  {
 // 'ram': 'thapa'
-// }
+
 
 const parts = name.split(' ');
 const result = { [parts[0]]: parts[1] };
