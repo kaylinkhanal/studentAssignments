@@ -10,7 +10,16 @@ console.log(name.split(" ").reverse());
 // 'ram': 'thapa'
 // }
 
+const StringToArray = name.split(" ");
+console.log(`${StringToArray[0]}: ${StringToArray[1]}`);
+
 //Q3. expected output:
 // {
 // username: 'Ram Thapa'
 // },
+
+let newObj = {
+  username: name,
+};
+
+console.log(newObj);
