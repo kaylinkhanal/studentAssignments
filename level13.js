@@ -12,8 +12,17 @@ console.log(name.split(' ').reverse())
 // 'ram': 'thapa'
 // }
 
+const newname=name.split(' ')
+const obj={
+    [newname[0]]:newname[1],
+}
+console.log(obj)
 
 //Q3. expected output: 
 // {
     // username: 'Ram Thapa'
 // },
+const newobject={
+    username:name,
+}
+console.log(newobject)
