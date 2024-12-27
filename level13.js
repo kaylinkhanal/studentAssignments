@@ -1,6 +1,18 @@
-const name='ram thapa';
+const name = 'ram thapa'
 
-const a =name.split(' ');
+//Q1. Expected output:
+// ['thapa','ram']
+console.log(name.split())
 
-const names={name};
-console.log(names);
+
+
+//Q2. Expected output
+//  {
+// 'ram': 'thapa'
+// }
+
+
+//Q3. expected output: 
+// {
+    // username: 'Ram Thapa'
+// },
