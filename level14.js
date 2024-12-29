@@ -18,3 +18,8 @@ for(let i =0;i<details[2].scores.length;i++){
     sum +=details[2].scores[i]
 }
 console.log((sum/details[1].fullMarks)*100)
+
+const [name,{fullMarks},{scores:[subA,subB,subC]}] = details
+const totalMarks = subA+subB+subC
+const percentage = (totalMarks/fullMarks) *100
+console.log(percentage)
