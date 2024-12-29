@@ -14,5 +14,5 @@ const details = [
 
 const [FullName, {fullMarks}, {scores:[subjectA, subjectB, subjectC]}] = details
 //Q3. Find the percentage scored 
-console.log(fullMarks/(subjectA+subjectB+subjectC)*100);
+console.log(((subjectA+subjectB+subjectC)/fullMarks)*100);
 
