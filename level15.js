@@ -11,9 +11,10 @@ const subjects= {
     computer: 56
 }
 
-
 details.subjects[0] = subjects.math;
+details.subjects[1] = subjects.science;
 console.log(details)
+
 
 //Expected output: 
 // {
