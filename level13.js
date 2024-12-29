@@ -14,7 +14,11 @@ const [first,last] = name.split(' ')
 console.log({[first]:last})
 
 
-
+const firstName = name.split(' ')[0]
+const lastName = name.split(' ')[1]
+console.log({
+   [firstName]: lastName
+})
 //Q3. expected output: 
 // {
     // username: 'Ram Thapa'
