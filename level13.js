@@ -2,7 +2,8 @@ const name = 'ram thapa'
 
 //Q1. Expected output:
 // ['thapa','ram']
-console.log (name.split(' ').reverse());
+
+
 
 //Q2. Expected output
 //  {
@@ -13,14 +14,12 @@ const [firstName, lastName] = name.split(' ');
 const result = {[firstName] : lastName };
 console.log(result);
 
-
+const firstName = name.split(' ')[0]
+const lastName = name.split(' ')[1]
+console.log({
+   [firstName]: lastName
+})
 //Q3. expected output: 
 // {
     // username: 'Ram Thapa'
-// }
-
-//const name = 'ram thapa';
-const newobject={
-    username:name,
-}
-console.log(newobject)
+// },
