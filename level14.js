@@ -10,7 +10,17 @@ console.log(arr.slice(2))
 
 const details = [
     'ram',{fullMarks: 150}, {scores: [45,23,25]}
+
 ]
+//use destructuring method to find the percentage scored by ram 
+// formula: (sum of scores / full marks) * 100
+
+const[fullName,{fullMarks},{scores:[a,b,c]}] = details
+const summ = a + b + c
+const percentagee = summ / fullMarks * 100
+console.log(percentagee)
+
+
 //Q3. Find the percentage scored 
 
 const sum = details[2].scores[0] + details[2].scores[1] + details[2].scores[2]
