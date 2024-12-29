@@ -25,11 +25,22 @@ const lower = { [namee[0]]: namee[1] };
 console.log(lower);
 
 
-
+const firstName = name.split(' ')[0]
+const lastName = name.split(' ')[1]
+console.log({
+   [firstName]: lastName
+})
 //Q3. expected output: 
 // {
     // username: 'Ram Thapa'
 // },
+<<<<<<< HEAD
 const [first,last] = name.split(' ');
 const username = `${first.charAt(0).toUpperCase()}${first.slice(1)} ${last.charAt(0).toUpperCase()}${last.slice(1)}`;
 console.log({username});
+=======
+
+console.log({
+    username: firstName[0].toUpperCase() + firstName.substring(1) + ' ' + lastName[0].toUpperCase() + lastName.substring(1)
+})
+>>>>>>> 477555a495eb105feeeb2b73124cfc315c6c958d
