@@ -2,11 +2,7 @@ const name = 'ram thapa'
 
 //Q1. Expected output:
 // ['thapa','ram']
-console.log(name.split())
-
 console.log(name.split(' ').reverse())
-
-
 //Q2. Expected output
 //  {
 // 'ram': 'thapa'
@@ -34,11 +30,7 @@ console.log({
 // {
     // username: 'Ram Thapa'
 // },
-const newobject={
-    username:name,
-}
-console.log(newobject)
 
 console.log({
-    
+    username: firstName[0].toUpperCase() + firstName.substring(1) + ' ' + lastName[0].toUpperCase() + lastName.substring(1)
 })
