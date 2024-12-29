@@ -9,8 +9,10 @@ console.log(arr.slice(2))
 const details = [
     'ram',{fullMarks: 150}, {scores: [45,23,25]}
 ]
+//using reduce method
 const sum=details[2].scores.reduce((acc,curr)=>acc+curr,0)
 console.log((sum / details[1].fullMarks) * 100);
+//without reduce method simply adding the scores
 const sums=details[2].scores[0]+details[2].scores[1]+details[2].scores[2]
 console.log((sums / details[1].fullMarks) * 100);
 
