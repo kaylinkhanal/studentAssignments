@@ -15,4 +15,6 @@ console.log((sum / details[1].fullMarks) * 100);
 //without reduce method simply adding the scores
 const sums=details[2].scores[0]+details[2].scores[1]+details[2].scores[2]
 console.log((sums / details[1].fullMarks) * 100);
-
+//using destructuring
+const [fullname,{fullMarks}, {scores:[sub1,sub2,sub3]}]=details
+console.log((sub1+sub2+sub3)/fullMarks*100)
