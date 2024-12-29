@@ -4,6 +4,7 @@ const name = "ram thapa";
 // ['thapa','ram']
 console.log(name.split(" ").reverse());
 
+console.log(name.split(" ").reverse());
 //Q2. Expected output
 //  {
 // 'ram': 'thapa'
@@ -29,3 +30,12 @@ updatedKeyName.username =
   updatedKeyName.username.slice(1);
 
 console.log(updatedKeyName);
+
+console.log({
+  username:
+    firstName[0].toUpperCase() +
+    firstName.substring(1) +
+    " " +
+    lastName[0].toUpperCase() +
+    lastName.substring(1),
+});
