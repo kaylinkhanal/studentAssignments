@@ -20,5 +20,7 @@ console.log(obj)
 // {
     // username: 'Ram Thapa'
 // },
-const userObject = {username:name}
+const first = name.split(' ')[0]
+const last = name.split(' ')[1]
+// const userObject = {username:first.charAt(0).toUpperCase()+first.substring(1) + ' '+last.charAt(0).toUpperCase()+last.subString(1)}
 console.log(userObject)
