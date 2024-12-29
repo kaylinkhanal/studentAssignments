@@ -10,4 +10,11 @@ const details = [
     'ram',{fullMarks: 150}, {scores: [45,23,25]}
 ]
 //Q3. Find the percentage scored 
-console.log(details[2])
+const scores = [45,23,25]
+let scores2 =scores.reduce((Prev,curr)=>{
+    return Prev+curr;
+})
+FMarks = details[1].fullMarks;
+percentagescore = scores2/FMarks*100;
+console.log(percentagescore)
+
