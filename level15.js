@@ -19,3 +19,7 @@ const subjects= {
 //     },
 //     subjects: [35,36]
 // }
+
+details.subjects[0]=subjects.math
+details.subjects[1]=subjects.science
+console.log(details)
