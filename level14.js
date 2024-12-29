@@ -1,0 +1,21 @@
+const arr = [3,5,6,2,3]
+
+//Q1. find length of arr
+// console.log(arr.length)
+
+//Q2.remove first two indexes // expected output: [6,2,3]
+
+console.log(arr.splice(2))
+
+
+const details = [
+    'ram',{fullMarks: 150}, {scores: [45,23,25]}
+]
+//Q3. Find the percentage scored 
+
+const [scores1, scores2, scores3] = details[2].scores
+
+const fullMarks = details[1].fullMarks
+
+const percentage = ((scores1 + scores2 + scores3) / fullMarks) * 100
+console.log(percentage)
