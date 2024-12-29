@@ -25,7 +25,11 @@ const lower = { [namee[0]]: namee[1] };
 console.log(lower);
 
 
-
+const firstName = name.split(' ')[0]
+const lastName = name.split(' ')[1]
+console.log({
+   [firstName]: lastName
+})
 //Q3. expected output: 
 // {
     // username: 'Ram Thapa'
