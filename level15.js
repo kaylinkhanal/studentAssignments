@@ -12,6 +12,9 @@ const subjects= {
 }
 
 
+details.subjects[0] = subjects.math;
+console.log(details)
+
 //Expected output: 
 // {
 //     user: {
