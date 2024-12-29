@@ -9,8 +9,10 @@ console.log(name.split(' '). reverse ())
 //  {
 // 'ram': 'thapa'
 // }
-const newname= name.split("")
-console.log(`{'${name[0]}':} '${name[1]}`)
+const firstname= name.split('')[0]
+const lastname= name.split('')[1]`
+
+console.log( firstname:lastname)
 
 //Q3. expected output: 
 // {
@@ -20,4 +22,4 @@ const new1={
     username:name,
 
 }
-console.log(new1)
+console.log()
