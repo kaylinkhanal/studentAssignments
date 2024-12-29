@@ -5,14 +5,12 @@ const name = 'ram thapa'
 
 
 
+
+console.log(name.split(' ').reverse())
 //Q2. Expected output
 //  {
 // 'ram': 'thapa'
 // }
-
-const [firstName, lastName] = name.split(' ');
-const result = {[firstName] : lastName };
-console.log(result);
 
 const firstName = name.split(' ')[0]
 const lastName = name.split(' ')[1]
@@ -23,3 +21,7 @@ console.log({
 // {
     // username: 'Ram Thapa'
 // },
+
+console.log({
+    username: firstName[0].toUpperCase() + firstName.substring(1) + ' ' + lastName[0].toUpperCase() + lastName.substring(1)
+})
