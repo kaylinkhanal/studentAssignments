@@ -12,5 +12,3 @@ const name = "ram thapa";
 // {
 // username: 'Ram Thapa'
 // },
-
-console.log("roshan");
