@@ -2,10 +2,7 @@ const name = 'ram thapa'
 
 //Q1. Expected output:
 // ['thapa','ram']
-n = name.split(' ').reverse()
-console.log(n);
-
-
+console.log(name.split(' ').reverse())
 //Q2. Expected output
 //  {
 // 'ram': 'thapa'
@@ -14,9 +11,16 @@ let [FN, LN] = name.split(' ');
 let answer = {[FN]: LN};
 console.log(answer);
 
-
+const firstName = name.split(' ')[0]
+const lastName = name.split(' ')[1]
+console.log({
+   [firstName]: lastName
+})
 //Q3. expected output: 
 // {
     // username: 'Ram Thapa'
 // },
-console.log(answer(0).touppercase())
+
+console.log({
+    username: firstName[0].toUpperCase() + firstName.substring(1) + ' ' + lastName[0].toUpperCase() + lastName.substring(1)
+})
