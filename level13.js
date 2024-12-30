@@ -30,12 +30,3 @@ updatedKeyName.username =
   updatedKeyName.username.slice(1);
 
 console.log(updatedKeyName);
-
-console.log({
-  username:
-    firstName[0].toUpperCase() +
-    firstName.substring(1) +
-    " " +
-    lastName[0].toUpperCase() +
-    lastName.substring(1),
-});
