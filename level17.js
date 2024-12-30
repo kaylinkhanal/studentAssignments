@@ -7,6 +7,9 @@ const results = {
 
 //Q1 find  the all time highest score hint: use Math.max
 //expected ouput is 54
+const Highest = Math.max(...Object.values(results).flat())
+console.log(Highest)
+    
 
 
 
@@ -15,8 +18,16 @@ const results = {
 //     2023: [23,12,32],
 //     2024: [42,54,43],
 // }
+//rest operator
+const {2025:remove,...rest} = results
+console.log(rest)
+
 
 
 //Q3 add all scores in a array
 // [23,12,32,42,54,43]
+
+const scores = Object.values(results).flat()
+console.log(scores)
+
 
