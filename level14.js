@@ -15,6 +15,8 @@ const details = [
 // console.log(details[2])
 
 const [fullName, {fullMarks}, {scores: subjectA, subjectB, subjectC}] = details
-totalScore = subjectA + subjectB + subjectC
+// totalScore = subjectA + subjectB + subjectC
 // const percentageScored = (totalScore / fullMarks) * 100
-console.log(totalScore)
+
+
+console.log(sum)
