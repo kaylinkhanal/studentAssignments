@@ -1,8 +1,19 @@
 const name = 'ram thapa'
 
+
+
+
+
+
 //Q1. Expected output:
+
 // ['thapa','ram']
 console.log(name.split(' ').reverse())
+
+const reversedArray = name.split(' ').reverse();
+console.log(reversedArray);
+
+
 
 
 
@@ -23,6 +34,13 @@ console.log({
 // {
     // username: 'Ram Thapa'
 // },
+
 const first1= first.charAt(0).toUpperCase()+first.slice(1)
 const last1= last.charAt(0).toUpperCase()+last.slice(1)
 console.log({username: first1 + ' ' + last1})
+
+
+console.log({
+    username: firstName[0].toUpperCase() + firstName.substring(1) + ' ' + lastName[0].toUpperCase() + lastName.substring(1)
+})
+
