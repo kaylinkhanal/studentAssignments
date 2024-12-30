@@ -19,7 +19,7 @@ console.log(Highest)
 //     2024: [42,54,43],
 // }
 //rest operator
-const {2025:remove,...rest} = results
+const {2025:remove,...rest} = results //naming 2025 as remove and rest as rest because number cannot be used as variable name
 console.log(rest)
 
 
@@ -27,7 +27,7 @@ console.log(rest)
 //Q3 add all scores in a array
 // [23,12,32,42,54,43]
 
-const scores = Object.values(results).flat()
+const scores = Object.values(results).flat()//flat le array ko array lai ekai array ma convert garxa
 console.log(scores)
 
 
