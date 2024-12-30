@@ -2,7 +2,8 @@
 const results = {
     2023: [23,12,32],
     2024: [42,54,43],
-    2025: [0,0,0]
+    2025: [0,0,0],
+    2026:[90,40,20]
 }
 
 //Q1 find  the all time highest score hint: use Math.max
@@ -28,3 +29,5 @@ console.log(results);
 const combinedScores = Object.values(results).flat();
 console.log(combinedScores);
 
+// CLass Code
+const
