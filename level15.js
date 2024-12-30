@@ -25,8 +25,3 @@ console.log({
     user,
     subjects: [math,science]
 })
-
-
-
-
-
