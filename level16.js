@@ -14,6 +14,8 @@ const sum={
 }
 console.log(sum)
 
+
+
 const newLap = '14km'
 const newLap2 = '11km'
 // Q2. console.log laps, expected output 
