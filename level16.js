@@ -5,7 +5,16 @@ const laps = ['10km', '12km', '13km']
 // {
 //   totalLap: 35
 // }
-console.log()
+// const num1=parseInt(laps[0])
+// const num2=parseInt(laps[1])
+// const num3=parseInt(laps[2])
+console.log({
+    totallap:parseInt(laps[0])+ parseInt(laps[1]) +parseInt(laps[2])
+})
+
+
+
+
 const newLap = '14km'
 const newLap2 = '11km'
 // Q2. console.log laps, expected output 
