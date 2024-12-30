@@ -26,5 +26,5 @@ console.log(resul);
 //Q3 add all scores in a array
 // [23,12,32,42,54,43]
 
-let allScores = [...results[2023], ...results[2024], ...results[2025]];
+let allScores = [...year1, ...year2, ...year3];
     console.log(allScores);
