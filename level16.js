@@ -9,7 +9,7 @@ const[first, second, third] = laps
 const firstNum = first.slice(0,-2)
 const secondNum = second.slice(0,-2)
 const thirdNum = third.slice(0,-2)
-console.log(Number(firstNum)+Number(secondNum)+Number(thirdNum))
+console.log({totalLap:Number(firstNum)+Number(secondNum)+Number(thirdNum)})
 
 const newLap = '14km'
 const newLap2 = '11km'
