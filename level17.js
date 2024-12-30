@@ -16,7 +16,7 @@ console.log(Math.max(...allScores.flat()))
 //     2023: [23,12,32],
 //     2024: [42,54,43],
 // }
-const { 2025: _, ...rest } = results
+const { 2025: _, ...rest } = results //naming 2025 as _ is just a convention to show that we are not using it vannala error aaudaina
 console.log(rest)
 
 
