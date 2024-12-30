@@ -35,4 +35,11 @@ console.log(total)
 const total2 = allScoresArray[0]+allScoresArray[1]+allScoresArray[2]+allScoresArray[3]+allScoresArray[4]+allScoresArray[5]
 console.log(total2)
 
+//union of three arrays
+console.log([...score1,...score2,...score3])
+//using concat method
+console.log(score1.concat(score2, score3))
+
+
+
 
