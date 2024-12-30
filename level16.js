@@ -5,12 +5,12 @@ const laps = ["10km", "12km", "13km"];
 //   totalLap: 35
 // }
 
-const firstNumber = laps[0].slice(0, 2);
-const secondNumber = laps[1].slice(0, 2);
-const thirdNumber = laps[2].slice(0, 2);
+const firstNumber = parseInt(laps[0]);
+const secondNumber = parseInt(laps[1]);
+const thirdNumber = parseInt(laps[2]);
 
 const newLapsObject = {
-  totalLaps: Number(firstNumber) + Number(secondNumber) + Number(thirdNumber),
+  totalLaps: firstNumber + secondNumber + thirdNumber,
 };
 
 console.log(newLapsObject);
