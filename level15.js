@@ -19,3 +19,5 @@ const subjects= {
 //     },
 //     subjects: [35,36]
 // }
+const {user:{name},subjects:[math,science]} = details
+console.log({user:{name},subjects:[subjects.math,subjects.science]})
