@@ -10,6 +10,10 @@ const results = {
 const allScores = Object.values(results)
 console.log(Math.max(...allScores.flat()))
 
+//using destructuring
+const {2023:score1, 2024:score2, 2025:score3} = results
+console.log(Math.max(...score1,...score2,...score3))
+
 
 //Q2 remove 2025
 //exepcted output {
