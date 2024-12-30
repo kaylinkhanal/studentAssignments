@@ -19,3 +19,19 @@ const subjects= {
 //     },
 //     subjects: [35,36]
 // }
+
+// let nestedObj ={
+//     user: details.user.name,
+//     subjects: [subjects.math, subjects.science]
+
+// }
+// console.log(nestedObj)
+
+const { user, subjects: [subject1, subject2] } = details;
+
+const output = {
+    user,
+    subjects: [subjects[subject1], subjects[subject2]],
+};
+
+console.log(output);
