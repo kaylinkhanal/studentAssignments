@@ -23,7 +23,7 @@ console.log(rest)
 //Q3 add all scores in a array
 // [23,12,32,42,54,43]
 
-const allScoresArray = Object.values(results).flat()
+const allScoresArray = Object.values(results).flat() //.flat() is used to convert 2D array to 1D array vannala nested array lai flatten garxa [1,2,[3,4]] => [1,2,3,4] parxa
 //using reduce method
 const total = allScoresArray.reduce((acc,curr)=>acc+curr,0)
 console.log(total)
