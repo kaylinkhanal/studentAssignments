@@ -2,10 +2,7 @@ const name = 'ram thapa'
 
 //Q1. Expected output:
 // ['thapa','ram']
-x = name.split(' ').reverse()
-console.log(x)
-
-
+console.log(name.split(' ').reverse())
 //Q2. Expected output
 //  {
 // 'ram': 'thapa'
@@ -14,11 +11,16 @@ name_copy = {}
 name_copy[x[1]] = x[0]
 console.log(name_copy)
 
-
+const firstName = name.split(' ')[0]
+const lastName = name.split(' ')[1]
+console.log({
+   [firstName]: lastName
+})
 //Q3. expected output: 
 // {
     // username: 'Ram Thapa'
 // },
-name_copy2 = {}
-name_copy2['username'] = name
-console.log(name_copy2)
+
+console.log({
+    username: firstName[0].toUpperCase() + firstName.substring(1) + ' ' + lastName[0].toUpperCase() + lastName.substring(1)
+})
