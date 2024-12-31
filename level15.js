@@ -19,3 +19,6 @@ const subjects= {
 //     },
 //     subjects: [35,36]
 // }
+
+details.subjects = details.subjects.map(subject => subjects[subject])
+console.log(details)
