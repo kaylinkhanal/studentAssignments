@@ -39,7 +39,7 @@ function getChocolate(price, chocolateName, reqChocolateCount) {
     return (`you have rs.${remainingPocketMoney} remaining`)
 }
 console.log(getChocolate(10, "kitkat", 3));
-console.log(getChocolate(20, "dairymilk", 4));
+console.log(getChocolate(20, "dairymilk", 4));git p
 
 
 const callme = ()=>{
@@ -47,3 +47,15 @@ const callme = ()=>{
 }
 
 console.log(callme())
+
+
+
+
+
+
+
+// Q3. convert the following syntax to ES6 arrow function
+
+function callMe(){
+    return 'hi'
+}
