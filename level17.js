@@ -34,6 +34,3 @@
 // const allScores = Object.values(results).flat();
 // console.log(allScores);
 // console.log(...score2023,...score2024,...score2025);
-
-
-
