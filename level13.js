@@ -9,6 +9,10 @@ console.log(name.split(" ").reverse());
 // 'ram': 'thapa'
 // }
 
+const user = name.split(" ");
+const result = { [user[0]]: user[1] };
+console.log(result);
+
 //Q3. expected output:
 // {
 // username: 'Ram Thapa'
