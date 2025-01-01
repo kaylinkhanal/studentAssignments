@@ -27,28 +27,30 @@
 
 // Q2 
 
-// console.log(buyChocolate(11, 'kitkact' , 3));
-// console.log(buyChocolate(22, 'dairymilk' , 4))
+// console.log(buyChocolate(10, 'kitkact' , 3));
+// console.log(buyChocolate(20, 'dairymilk' , 4))
 
 // expected output is 
 // You have 170 Rs remaining
 // You have 90 Rs remaining
 
 
-let pocket = 200
-function buyChocolate(price, chocolate, quantity){
-    const total = price * quantity;
-    const remainingAmount = Math.floor(pocket -total);
-    return `You have ${remainingAmount} Rs remaining`
+let pocketMoney = 200;
+
+function buyChocolate(price, chocolate, quantity) {
+    const totalCost = price * quantity; // Calculate total cost
+    const remainingAmount = pocketMoney - totalCost; // Calculate remaining money
+
+    return `You have ${remainingAmount} Rs remaining`;
 }
 
-console.log(buyChocolate(10, 'kitkact' , 3));
- console.log(buyChocolate(20, 'dairymilk' , 4))
-
+// Test cases
+console.log(buyChocolate(10, 'kitkat', 3)); // 3 kitkats at 10 Rs each
+console.log(buyChocolate(20, 'dairymilk', 4)); // 4 dairymilks at 20 Rs each
 
  // Q3 convert the folowing syntax to ES6 arrow function 
 
- const callMe =() => {
+ const callMe=() => {
     return 'hi'
  }
  
