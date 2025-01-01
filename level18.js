@@ -1,9 +1,13 @@
 let pocketMoney= 200
 
 function buyChocolate(price, chocolate){
-    // const remainingAmount = pocketMoney - price;
     const quantity = Math.floor(pocketMoney / price);
-    return (`you can buy ${quantity} ${chocolate} with your pocketmoney`);
+    const remainingAmount = pocketMoney - quantity * price;
+    const arkochoco =(price - remainingAmount) 
+    // const a = arkochoco + remainingAmount;
+    
+    return (`you can buy ${quantity} ${chocolate} with your pocketmoney and get Rs${remainingAmount} and if you add Rs${arkochoco} you can get another piece of chocolet`);
+    
 }
 
 console.log(buyChocolate(11, 'kitkat')) //arguments
