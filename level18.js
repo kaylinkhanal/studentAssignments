@@ -59,9 +59,6 @@ console.log(callme())
 const callMe =()=>{
     return 'hi'
 }
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> 2daf6b8d821a6bc5c354792282824445c417a627
