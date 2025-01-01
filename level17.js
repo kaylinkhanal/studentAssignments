@@ -1,10 +1,8 @@
-
 const results = {
     2023: [23,12,32],
     2024: [42,54,43],
     2025: [0,0,0]
 }
-
 //Q1 find  the all time highest score hint: use Math.max
 //expected output is 54
 
