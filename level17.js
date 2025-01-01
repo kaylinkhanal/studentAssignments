@@ -21,4 +21,4 @@ console.log( {score2023,score2024})
 //Q3 add all scores in a array
 // [23,12,32,42,54,43]
 
-console.log([...score2023,...score2024,...score2025])
+console.log([...score2023,...score2024])
