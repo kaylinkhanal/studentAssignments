@@ -21,4 +21,4 @@ function canBuyChocolate(price, chocolateName) {
 }
 
 console.log(canBuyChocolate(11, "kitkat"));
-console.log(buyChocolate(20, 'dairymilk'))
+console.log(canBuyChocolate(20, 'dairymilk'))
