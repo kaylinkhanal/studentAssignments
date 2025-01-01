@@ -1,7 +1,7 @@
 let pocketMoney= 200
 function buyChocolate(price, chocolate, count){
-     pocketMoney=pocketMoney-(price *count )
-    return ` You have ${pocketMoney} 170 Rs remaining `
+     pocketMoney= pocketMoney-(price *count )
+    return ` You have ${pocketMoney}  Rs. remaining `
     
 }
 
