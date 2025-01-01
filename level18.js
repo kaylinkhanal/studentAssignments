@@ -1,7 +1,7 @@
 let pocketMoney= 200
-function buyChocolate(price, chocolate){
-    const buyCount = Math.floor(pocketMoney / price)
-    return `You can buy  ${buyCount}  ${chocolate}  with your pocket money`
+function buyChocolate(price, chocolate, count){
+    pocketMoney = pocketMoney - (price * count)
+    return `You have  ${pocketMoney} Rs. remaining`
 }
 
 // console.log(buyChocolate(10, 'kitkat')) //arguments
@@ -39,7 +39,7 @@ function getChocolate(price, chocolateName, reqChocolateCount) {
     return (`you have rs.${remainingPocketMoney} remaining`)
 }
 console.log(getChocolate(10, "kitkat", 3));
-console.log(getChocolate(20, "dairymilk", 4));git p
+console.log(getChocolate(20, "dairymilk", 4));
 
 
 const callme = ()=>{
@@ -56,6 +56,12 @@ console.log(callme())
 
 // Q3. convert the following syntax to ES6 arrow function
 
-function callMe(){
+const callMe =()=>{
     return 'hi'
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 2daf6b8d821a6bc5c354792282824445c417a627
