@@ -1,12 +1,12 @@
 let pocketMoney= 200
 
 function buyChocolate(price, chocolate){
-    const buycount = pocketMoney / price
+    const buycount = Math.floor(pocketMoney / price)
     return ` You can  buy ${buycount}   ${chocolate}  with your pocketmoney `
     
 }
 
-console.log(buyChocolate(10, 'kitkat')) //arguments
+console.log(buyChocolate(11, 'kitkat')) //arguments
 console.log(buyChocolate(20, 'dairymilk'))
 
 
