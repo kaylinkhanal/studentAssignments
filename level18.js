@@ -27,3 +27,14 @@ console.log(buyChocolate(20, 'dairymilk',4))
 // You have 90 Rs remaining
 
 
+
+
+// Q3. convert the following syntax to ES6 arrow function
+
+
+const callMe = () => {
+    return 'hi'
+}
+
+
+
