@@ -1,7 +1,7 @@
 let pocketMoney= 200
-function buyChocolate(price, chocolate, qty){
-    const remaining = pocketMoney - (price * qty)
-    return `You have ${remaining} Remaining`
+function buyChocolate(price, chocolate, count){
+    pocketMoney = pocketMoney - (price * count)
+    return `You have  ${pocketMoney} Rs. remaining`
 }
 
 // console.log(buyChocolate(11, 'kitkat')) //arguments
@@ -20,6 +20,9 @@ console.log(buyChocolate(20, 'dairymilk',4))
 
 // Q3. convert the following syntax to ES6 arrow function
 
-const callMe=()=>{
+const callMe =()=>{
     return 'hi'
 }
+
+
+
