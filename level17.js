@@ -1,10 +1,8 @@
-
 const results = {
     2023: [23,12,32],
     2024: [42,54,43],
     2025: [0,0,0]
 }
-
 //Q1 find  the all time highest score hint: use Math.max
 //expected ouput is 54
 const allScores = Object.values(results)
@@ -25,7 +23,8 @@ console.log(rest)
 
 
 //Q3 add all scores in a array
-// [23,12,32,42,54,43]
+// [23,12,32,42,54,43,0,0,0]
+console.log([...score2023, ...score2024,...score2025])
 
 const allScoresArray = Object.values(results).flat() //.flat() is used to convert 2D array to 1D array vannala nested array lai flatten garxa [1,2,[3,4]] => [1,2,3,4] parxa
 //using reduce method
