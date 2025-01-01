@@ -30,3 +30,5 @@ console.log({score2023,score2024})
 
 console.log([...score2023,...score2024,...score2025])
 
+
+
