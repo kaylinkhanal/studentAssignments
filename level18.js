@@ -11,9 +11,15 @@ function buyChocolate(price, chocolate, qty){
 //You can buy 20 kitkat with your pocketmoney
 // You can buy 10 dairymilk with your pocketmoney
 
-//Q2.
-console.log(buyChocolate(11, 'kitkat', 3)) //arguments
-console.log(buyChocolate(22, 'dairymilk', 4))
-//expected output is
-//you have 170 Rs Remaining
-//You have 90 Rs remaining
+//Q2. 
+console.log(buyChocolate(10, 'kitkat', 3)) //arguments
+console.log(buyChocolate(20, 'dairymilk',4))
+//expected output is 
+// You have 170 Rs remaining
+// You have 90 Rs remaining
+
+// Q3. convert the following syntax to ES6 arrow function
+
+const callMe=()=>{
+    return 'hi'
+}
