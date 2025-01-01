@@ -1,4 +1,4 @@
-let pocketMoney= 200
+// let pocketMoney= 200
 
 // function buyChocolate(price, chocolate){
 //     const remainingAmount = pocketMoney - price
