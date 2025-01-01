@@ -7,13 +7,18 @@ const laps = ['10km', '12km', '13km']
 // }
 
 console.log({
+<<<<<<< HEAD
     totalLap : parseInt(laps[0]) + parseInt(laps[1]) + parseInt(laps[2])
+=======
+    totalLap: parseInt(laps[0])+parseInt(laps[1])+parseInt(laps[2])
+>>>>>>> 6df32027839b0df44ff930def5afffd7b1f8e92d
 })
 
 const newLap = '14km'
 const newLap2 = '11km'
 // Q2. console.log laps, expected output 
 // ['10km', '12km', '13km', '14km','11km']
+<<<<<<< HEAD
 
 laps.push(newLap, newLap2)
 console.log(laps)
@@ -22,5 +27,12 @@ console.log(laps)
 //  console.log laps, expected output 
 // ['10km', '12km', '13km', '14km']
 
+=======
+laps.push(newLap,newLap2)
+console.log(laps)
+//Q3. pop last lap from the array
+//  console.log laps, expected output 
+// ['10km', '12km', '13km', '14km']
+>>>>>>> 6df32027839b0df44ff930def5afffd7b1f8e92d
 laps.pop()
 console.log(laps)
