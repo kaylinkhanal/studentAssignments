@@ -32,3 +32,17 @@ function buyChocolate(price, chocolate, quantity){
 
 console.log(buyChocolate(10, 'kitkat', 3)); //arguments
 console.log(buyChocolate(20, 'dairymilk',4));
+
+
+
+
+
+
+
+
+// Q3. convert the following syntax to ES6 arrow function
+
+callMe = () =>{
+    return 'hi'
+}
+console.log(callMe());
