@@ -40,3 +40,10 @@ function getChocolate(price, chocolateName, reqChocolateCount) {
 }
 console.log(getChocolate(10, "kitkat", 3));
 console.log(getChocolate(20, "dairymilk", 4));
+
+
+const callme = ()=>{
+    return ('ram')
+}
+
+console.log(callme())
