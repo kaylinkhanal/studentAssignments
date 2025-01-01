@@ -1,12 +1,13 @@
 let pocketMoney= 200
 
-function buyChocolate(price, chocolate){
+function buyChocolate(price, chocolate ,count){
     const  totalchoclate=Math.floor(pocketMoney/price)
     return ` you can buy ${totalchoclate}  ${chocolate } with your pocket money`
 }
 
 console.log(buyChocolate(11, 'kitkat')) //arguments
 console.log(buyChocolate(20, 'dairymilk'))
+
 
 
 
