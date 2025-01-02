@@ -1,10 +1,19 @@
 const arr = [3,5,6,1, 'ram' ,false]
 
-let sum = 0
-arr.forEach((item)=>{
-    if(item%2==1)
-    sum= sum + item
+const number = arr.filter((item)=>{
+    if(Number.isInteger(item)){
+        return item
+    }
+  
 })
+let sum= 0
+const sum1=arr.forEach((item)=>{
+    sum=item
+})
+
 console.log(sum)
 
-// calculate sum of odd number 
+
+
+// calculate the sum  number 
+// console.log(sum)
