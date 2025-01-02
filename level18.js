@@ -1,14 +1,10 @@
-let pocketmoney= 200
-
-// function buyChocolate(price, chocolate){
-//     const remainingAmount = pocketMoney - price
-//     return 'If you buy cholocate' + chocolate + 'you will have '+ remainingAmount
-// }
-
-// console.log(buyChocolate(10, 'kitkat')) //arguments
-// console.log(buyChocolate(20, 'dairymilk'))
-
-
+let pocketMoney= 200
+function buyChocolate(price, chocolate, count){
+    pocketMoney = pocketMoney - (price * count)
+    return `You have  ${pocketMoney} Rs. remaining`
+}
+// console.log(buyChocolate(11, 'kitkat')) //arguments
+// console.log(buyChocolate(22, 'dairymilk'))
 
 //Q1. expected output: 
 //You can buy 20 kitkat with your pocketmoney
@@ -37,10 +33,9 @@ console.log(buyChocolate(20, 'dairymilk',4))
 
 // Q3. convert the following syntax to ES6 arrow function
 
-// function callMe(){
-//     return 'hi'
-// }
-
-const callMe=()=>{
-    return'hi'
+const callMe =()=>{
+    return 'hi'
 }
+
+
+
