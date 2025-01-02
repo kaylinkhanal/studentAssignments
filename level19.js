@@ -9,3 +9,4 @@ arr.forEach((item)=>{
 console.log(sum)
 
 // calculate sum of odd number
+
