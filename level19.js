@@ -1,10 +1,10 @@
 const arr = [3,5,6,1, 'ram' ,false]
 
-// let sum = 0
-// const output = arr.map((item)=>{
-//     //sum = sum + item
-// })
-// console.log(sum)
+let sum = 0
+const output = arr.forEach((item)=>{
+    sum = sum + (parseInt(item) || 0)
+})
+console.log(sum)
 
 //q1. calulate the sum of Numbers
 
@@ -21,8 +21,16 @@ sumNum=item
 })
 console.log(sumNum)
 //q2. filter out non integers : expected output : [3,5,6,1]
+const filtered = arr.filter((item)=>{
+   return parseInt(item)
+})
+console.log(filtered)
 //q3. in the filtered result, multiply each number by 5 using .map
+const mapped = filtered.map((item)=>{
+    return item * 5
+})
 
+console.log(mapped)
 
 
 // MAP                   vs                   FOREACH
