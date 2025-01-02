@@ -1,8 +1,7 @@
 let pocketMoney= 200
 function buyChocolate(price, chocolate, count){
-     pocketMoney= pocketMoney-(price *count )
-    return ` You have ${pocketMoney}  Rs. remaining `
-    
+    pocketMoney = pocketMoney - (price * count)
+    return `You have  ${pocketMoney} Rs. remaining`
 }
 
 console.log(buyChocolate(11, 'kitkat')) //arguments
