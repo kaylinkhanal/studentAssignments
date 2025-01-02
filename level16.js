@@ -7,18 +7,7 @@ const laps = ["10km", "12km", "13km"];
 // }
 
 // @ts-ignore
-const laps = ["10km", "12km", "13km"];
 
-const calculateTotalLap = (laps) => {
-  // Extract numbers and calculate the total
-  const total = laps
-    .map((lap) => parseInt(lap)) // Convert '10km' -> 10
-    .reduce((sum, distance) => sum + distance, 0); // Sum up all distances
-
-  return { totalLap: total };
-};
-
-console.log(calculateTotalLap(laps));
 // Output: { totalLap: 35 }
 
 const newLap = "14km";
