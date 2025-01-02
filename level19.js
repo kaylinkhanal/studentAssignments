@@ -6,3 +6,5 @@ arr.forEach((item) => {
   }
 });
 console.log(sum);
+
+console.log("hello");
