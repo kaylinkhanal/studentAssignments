@@ -9,7 +9,9 @@ const arr = [3,5,6,1, 'ram' ,false]
 //q1. calulate the sum of Numbers
 let sum = 0
 arr.forEach((item) => {
-    sum = sum + (parseInt(item) || 0)
+    // sum = sum + (parseInt(item) || 0)
+    // OR
+    if (Number.isInteger(item)) sum += item
 })
 console.log(sum)
 
