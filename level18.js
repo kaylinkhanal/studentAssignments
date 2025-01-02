@@ -12,6 +12,10 @@ function buyChocolate(price, chocolate){
         return `You can buy ${quantity} ${chocolate} with your pocket money. You will have ${pocketMoney % price} remaining`
     }
 }
+function buyChocolate(price, chocolate, count){
+    pocketMoney = pocketMoney - (price * count)
+    return `You have  ${pocketMoney} Rs. remaining`
+}
 console.log(buyChocolate(11, 'kitkat'))
 console.log(buyChocolate(20, 'dairymilk'))
 
@@ -53,3 +57,24 @@ console.log(buyChocolates(20, 'dairymilk', 4))
 
 
 // You have 90 Rs remaining
+// You have 90 Rs remaining
+
+
+
+
+
+
+
+
+
+// Q3. convert the following syntax to ES6 arrow function
+
+const fact = (n) => {
+  if (n < 1) {
+    return 1
+  } 
+  return n * fact(n - 1)
+}
+
+
+
