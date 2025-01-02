@@ -26,7 +26,7 @@ console.log(sum)
 //q2. filter out non integers : expected output : [3,5,6,1]
 
 const output = arr.filter((item) =>{
-    if(typeof(item) === 'number') return item
+     return parseInt(item)
 })
 console.log(output)
 // q3. in the filtered result, multiply each number by 5 using .map
