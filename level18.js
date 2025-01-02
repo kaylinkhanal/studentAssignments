@@ -25,6 +25,10 @@ function buyChocolate(price, chocolate){
     const buyCount = Math.floor(pocketMoney / price)
     return `You can buy  ${buyCount}  ${chocolate}  with your pocket money`
 }
+function buyChocolate(price, chocolate, count){
+    pocketMoney = pocketMoney - (price * count)
+    return `You have  ${pocketMoney} Rs. remaining`
+}
 // console.log(buyChocolate(11, 'kitkat')) //arguments
 // console.log(buyChocolate(22, 'dairymilk'))
 
@@ -43,3 +47,19 @@ console.log(buyChocolatewithitem(20, 'dairymilk',4))
 // You have 170 Rs remaining
 
 // You have 90 Rs remaining
+// You have 90 Rs remaining
+
+
+
+
+
+
+
+
+
+// Q3. convert the following syntax to ES6 arrow function
+
+const callMe =()=>{
+    return 'hi'
+}
+
