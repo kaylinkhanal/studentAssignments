@@ -88,7 +88,7 @@ const winner  = arr.filter((item)=>{
         return item
     }
     // return only if item.name[0] is r
-    }).filter((item)=>{
+    }).map((item)=>{
         item.winner = true //item ma winner key add garera true value assign garera 
         return item
     // add a key item.winner = true  and return item
