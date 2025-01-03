@@ -35,8 +35,9 @@ console.log(output);
 // output is 70
 // hint
 let ageSum = 0
-arr.loop((item)=>{
-    // ageSum = ageSum  + item ko age
+arr.map((item)=>{
+    ageSum = ageSum  + item.age
+    return  ageSum;
     })
 
     console.log(ageSum)
@@ -55,3 +56,10 @@ arr.loop((item)=>{
 //     age: 40
 // }
 // ]
+
+const addSurnam = arr.map((item) => {
+    item.name = item.name + ' thapa';
+    return item
+})
+
+console.log(addSurnam)
