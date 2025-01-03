@@ -31,13 +31,12 @@ console.log(output)
 
 // Q2// find total sum of ages of users
 // output is 70
-// hint
-let ageSum = 0
-arr.loop((item)=>{
-    // ageSum = ageSum  + item ko age
-    })
 
-    console.log(ageSum)
+let agesum =0
+arr.forEach((item)=>{
+    agesum+=item.age
+})
+console.log(agesum)
 
 
 
