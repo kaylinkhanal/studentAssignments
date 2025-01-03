@@ -44,11 +44,17 @@ arr.forEach((item)=>{
 //     age: 40
 // }
 // ]
+
 const result = arr.map((item)=>{
-    item.name += ' Thapa'
+    item.name += ' thapa'
     return item
-})
+    })
 console.log(result)
+
+
+
+
+
 
 
 //Q4  return only names starting with r, and declare him the winner, by adding new key
