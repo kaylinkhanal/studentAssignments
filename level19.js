@@ -7,10 +7,10 @@ const output = arr.forEach((item)=>{
 console.log(sum)
 
 //q1. calulate the sum of Numbers
-let sum =0
+let sum1 =0
 arr.forEach((item)=>{
 if(typeof item ==='number')
-sum+=item
+sum1+=item
 })
 console.log(sum)
 //q2. filter out non integers : expected output : [3,5,6,1]

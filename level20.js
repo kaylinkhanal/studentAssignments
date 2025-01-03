@@ -13,10 +13,16 @@ const arr = [{
 //     age: 40
 // }
 // ]
+<<<<<<< HEAD
 
 const output = arr.filter((item)=>{
    if(item.age>35)
     return item;
+=======
+// hint
+const output = arr.filter((item)=>{
+return item.age > 35
+>>>>>>> 8afe770b6e9960895fc4329761e3760077b0f50f
 })
 
 console.log(output)
@@ -53,8 +59,36 @@ console.log(agesum)
 // }
 // ]
 
+<<<<<<< HEAD
 const output1 = arr.filter((item)=>{
     if(typeof item!== Boolean)
         return item;
 }) 
 console.log(output1)
+=======
+
+
+
+
+
+
+
+
+//Q4  return only names starting with r, and declare him the winner, by adding new key
+// winner as true
+
+//[{
+//     name: 'ram',
+//     winner: true
+//     age:30
+// }
+// ]
+
+const winner  = arr.loop((item)=>{
+// return only if item.name[0] is r
+}).loop((item)=>{
+// add a key item.winner = true  and return item
+})
+
+console.log(winner)
+>>>>>>> 8afe770b6e9960895fc4329761e3760077b0f50f
