@@ -16,7 +16,3 @@ const percentage = (total/300)*100
 console.log(percentage)
 //Q2 what is the lowest marks scored? expected ouptut: 93
 
-scores.filter((item)=>{
-    if(item[1])
-    
-})
