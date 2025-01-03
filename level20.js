@@ -62,15 +62,12 @@ console.log(result);
 // ]
 
 const winner = arr
-  .map((item) => {
-    if (item["name"] === "r") {
-      return item;
-    }
+  .filter((item) => {
+    return item.name[0] === "r";
   })
   .map((item) => {
-    item["winner"] = true;
+    item.winner = true;
     return item;
-    // add a key item.winner = true  and return item
   });
 
 console.log(winner);
