@@ -18,3 +18,34 @@ console.log(result);
 
 
 
+
+
+
+
+
+
+
+// Q2// find total sum of ages of users
+// output is 70
+// hint
+let ageSum = 0
+arr.forEach((item)=>{
+    ageSum = ageSum  + item.age
+    })
+
+    console.log(ageSum)
+
+
+
+
+
+
+
+//Q3.Expected output: [{
+//     name: 'ram thapa',
+//     age:30
+// },{
+//     name: 'gopal thapa',
+//     age: 40
+// }
+// ]
