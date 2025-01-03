@@ -8,11 +8,16 @@
 const arr = [3,5,6,1, 'ram' ,false]
 
 let sum = 0
+    // Method 1
 const output = arr.map((item)=>{
     if (item > 0){
         sum = sum + item;
-    }
-})
+    });
+
+    // Method 2
+// const output = arr.forEach((item)=>{
+//     sum = sum + (parseInt(item) || 0)
+// })
 
 
 //q1. calulate the sum of Numbers
@@ -31,6 +36,9 @@ console.log(filterr);
 
 
 //q3. in the filtered result, multiply each number by 5 using .map
+const mapped = filtered.map((item)=>{
+    return item * 5
+})
 
 const multi = filterr.map((item) => {
     return item * 5;
@@ -49,5 +57,3 @@ console.log(multi);
 // -> returns new array
 // -> can remove items from array
 // -> 
-
-
