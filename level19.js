@@ -1,16 +1,32 @@
-const arr = [3, 5, 6, 1];
+const arr = [3, 5, 6, 1, "ram", false];
 
-//   return item % 2 !== 0;
+let sum = 0;
+const output = arr.forEach((item) => {
+  sum = sum + (parseInt(item) || 0);
+});
+console.log(sum);
 
-// console.log(oddNumber);
-// sum = oddNumber.reduce((a, b) => a + b, 0);
+//q1. calulate the sum of Numbers
+//q2. filter out non integers : expected output : [3,5,6,1]
+const filtered = arr.filter((item) => {
+  return parseInt(item);
+});
+console.log(filtered);
+//q3. in the filtered result, multiply each number by 5 using .map
+const mapped = filtered.map((item) => {
+  return item * 5;
+});
 
-// calculate sum of odd number
-// console.log(sum);
+console.log(mapped);
 
-const out = arr
-  .map((item) => item + 1)
-  .map((a) => a + 2)
-  .filter((b) => b % 2 == 0)
-  .map((a) => a + 5);
-console.log(out);
+// MAP                   vs                   FOREACH
+// -> returns new array                    -> doesn't return new array, but can modify existing array
+// ->                                      -> faster
+// -> chain new functions                  -> not chainable
+//-> usecase: modify old array             ->usecase: just calcualte sth
+//-> returned array length is always same
+
+//FILTER
+// -> returns new array
+// -> can remove items from array
+// ->

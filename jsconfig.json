@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "checkJs": false // Disable TypeScript checks in JavaScript files
+  },
+  "exclude": ["node_modules"]
+}
