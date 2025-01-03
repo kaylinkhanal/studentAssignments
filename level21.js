@@ -17,3 +17,10 @@ console.log(percentage)
 //console.log(percentage)
 //Q2 what is the lowest marks scored? expected ouptut: 93
 
+
+const output2 = scores.map((item)=>{
+    return item[1]
+})
+
+const result = Math.min(...output2)
+console.log(result)
