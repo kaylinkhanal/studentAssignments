@@ -61,7 +61,10 @@ console.log(integers);
 
 //q3. in the filtered result, multiply each number by 5 using .map
 
-
+const mapped=integers.map((item)=>{
+    return item*5;
+})
+console.log(integers);
 
 // MAP                   vs                   FOREACH
 // -> returns new array                    -> doesn't return new array, but can modify existing array
