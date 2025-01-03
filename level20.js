@@ -34,10 +34,9 @@ console.log(output)
 // Q2// find total sum of ages of users
 // output is 70
 // hint
- let ageSum = 0
- arr.forEach((item)=>{
-       
-     ageSum = ageSum  + item.age
+let ageSum = 0
+arr.forEach((item)=>{
+    ageSum = ageSum  + item.age
     })
 
    console.log(ageSum)
@@ -57,12 +56,10 @@ console.log(output)
 // }
 // ]
 
- const result=arr.map((item)=>{
-
-    item.name+='thapa'
-   
+const result = arr.map((item)=>{
+    item.name += ' thapa'
     return item
-})
+    })
 console.log(result)
 
 
