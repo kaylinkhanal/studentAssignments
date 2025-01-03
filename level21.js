@@ -33,6 +33,7 @@ console.log(lowest)
 
 
 // alternate methid to find the lowest marks using math.min
-const lowestt = Math.min(...scores.map((item)=>item[1])) //scores ko item lai map gareko ani item[1] lai math.min le find gareko
+const lowestt = Math.min(...scores.map((item)=>item[1])) //using spread operator to spread the array and map to loop through the array
+ //scores ko item lai map gareko ani item[1] lai math.min le find gareko
 console.log(lowestt)
 
