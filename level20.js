@@ -15,12 +15,8 @@ const arr = [{
 // ]
 // hint
 const output = arr.filter((item)=>{
-<<<<<<< HEAD
 // item ko age > 40 
     return item.age > 35
-=======
-return item.age > 35
->>>>>>> 8afe770b6e9960895fc4329761e3760077b0f50f
 })
 
 console.log(output)
@@ -30,17 +26,12 @@ console.log(output)
 // output is 70
 // hint
 let ageSum = 0
-arr.map((item)=>{
+arr.forEach((item)=>{
     // ageSum = ageSum  + item ko age
     ageSum = ageSum + item.age
     })
 
     console.log(ageSum)
-
-
-
-
-
 
 
 //Q3.Expected output: [{
@@ -51,29 +42,8 @@ arr.map((item)=>{
 //     age: 40
 // }
 // ]
-
-
-
-
-
-
-
-
-
-//Q4  return only names starting with r, and declare him the winner, by adding new key
-// winner as true
-
-//[{
-//     name: 'ram',
-//     winner: true
-//     age:30
-// }
-// ]
-
-const winner  = arr.loop((item)=>{
-// return only if item.name[0] is r
-}).loop((item)=>{
-// add a key item.winner = true  and return item
+const result = arr.map((item)=>{
+    item.name += ' thapa'
+    return item
 })
-
-console.log(winner)
+console.log(result)
