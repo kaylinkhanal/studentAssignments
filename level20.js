@@ -15,8 +15,8 @@ const arr = [{
 // ]
 // hint
 const output = arr.filter((item)=>{
-    if (item=>35){
-       
+    if (item.age>35){
+       return(item)
     }
    
 // item ko age > 40 
@@ -25,3 +25,38 @@ const output = arr.filter((item)=>{
 console.log(output)
 
 
+
+
+
+
+
+
+
+// Q2// find total sum of ages of users
+// output is 70
+// hint
+let ageSum = 0
+arr.forEach((item)=>{
+    ageSum=  ageSum +item.age
+    // ageSum = ageSum  + item ko age
+    })
+
+    console.log(ageSum)
+
+
+
+
+
+
+
+//Q3.Expected output: [{
+//     name: 'ram thapa',
+//     age:30
+// },{
+//     name: 'gopal thapa',
+//     age: 40
+// }
+// ]
+const arr1=arr.map((item)=>{
+
+})
