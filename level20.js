@@ -73,4 +73,25 @@ console.log(surname)
 // console.log(updatedArr)
 
 
+//Q4  return only names starting with r, and declare him the winner, by adding new key
+// winner as true
 
+//[{
+//     name: 'ram',
+//     winner: true
+//     age:30
+// }
+// ]
+
+const winner  = arr.filter((item)=>{
+    if(item.name[0] === 'r'){ //item ko name ko 0th index r xa vane matra return garne
+        return item
+    }
+    // return only if item.name[0] is r
+    }).filter((item)=>{
+        item.winner = true //item ma winner key add garera true value assign garera 
+        return item
+    // add a key item.winner = true  and return item
+    })
+    
+    console.log(winner)
