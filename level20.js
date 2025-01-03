@@ -32,8 +32,8 @@ console.log(output)
 // output is 70
 // hint
 let ageSum = 0
-arr.loop((item)=>{
-    // ageSum = ageSum  + item ko age
+arr.forEach((item)=>{
+    ageSum = ageSum  + item.age
     })
 
     console.log(ageSum)
@@ -53,7 +53,11 @@ arr.loop((item)=>{
 // }
 // ]
 
-
+const result = arr.map((item)=>{
+    item.name += ' thapa'
+    return item
+    })
+console.log(result)
 
 
 
