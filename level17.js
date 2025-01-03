@@ -7,7 +7,7 @@ const results = {
 
 //Q1 find  the all time highest score hint: use Math.max
 //expected ouput is 54
-const Highest = Math.max(...Object.values(results).flat())
+const Highest = Math.max(...Object.values(results).flat()) //flat converts array of arrays to a single array
 console.log(Highest)
     
 
@@ -20,7 +20,8 @@ console.log(Highest)
 // }
 //rest operator
 const {2025:remove,...rest} = results //naming 2025 as remove and rest as rest because number cannot be used as variable name
-console.log(rest)
+console.log(rest) //rest is the object that contains all the values except 2025
+
 
 
 
