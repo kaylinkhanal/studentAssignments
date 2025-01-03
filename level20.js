@@ -74,3 +74,12 @@ console.log(output)
 //     age:30
 // }
 // ]
+
+const winner  = arr.loop((item)=>{
+// return only 
+ if (item.name[0]) === r
+}).loop((item)=>{
+// add a key item.winner = true  and return item
+})
+
+console.log(winner)
