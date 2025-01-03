@@ -57,7 +57,13 @@ console.log(output)
 // }
 // ]
 
+ const result=arr.map((item)=>{
 
+    item.name+='thapa'
+   
+    return item
+})
+console.log(result)
 
 
 
@@ -75,11 +81,18 @@ console.log(output)
 // }
 // ]
 
-// const winner  = arr.loop((item)=>{
-// // return only 
-//  if (item.name[0]===r)
-// }).loop((item)=>{
-// // add a key item.winner = true  and return item
-// })
+const winner  = arr.filter((item)=>{
+// return only 
+ if (item.name[0]==='r'){
+  item.name=winner
+ }
+}).map((item)=>{
+   item.winner = true 
+    return item
+})
 
-// console.log(winner)
+console.log(winner)
+
+
+
+
