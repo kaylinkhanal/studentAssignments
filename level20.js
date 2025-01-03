@@ -67,9 +67,8 @@ console.log("QN 3 ", updatedArr);
 const newArray = arr
   .filter((person) => person.name[0] === "r")
   .map((item) => ({
-    name: item.name,
+    ...item,
     winner: true,
-    age: item.age,
   }));
 
 console.log("QN 4 ", newArray);
