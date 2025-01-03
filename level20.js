@@ -13,9 +13,10 @@ const arr = [{
 //     age: 40
 // }
 // ]
-// hint
-const output = arr.loop((item)=>{
-// item ko age > 40 
+
+const output = arr.filter((item)=>{
+   if(item.age>35)
+    return item;
 })
 
 console.log(output)
