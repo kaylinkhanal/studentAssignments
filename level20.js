@@ -51,3 +51,9 @@ arr.forEach((item)=>{
 //     age: 40
 // }
 // ]
+// hint
+const outputs = arr.map(item => ({ name: `${item.name} thapa`, age: item.age }))
+console.log(outputs)
+
+//better way of doing it only changing the name
+const outputss = arr.map(item => ({ ...item, name: `${item.name} thapa` }))
