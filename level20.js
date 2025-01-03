@@ -54,3 +54,10 @@ arr.forEach((item)=>{
 //     age: 40
 // }
 // ]
+
+const output3 = arr.map((item)=>{
+    item.name += ' thapa'
+    return item
+})
+
+console.log(output3)
