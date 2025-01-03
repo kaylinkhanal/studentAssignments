@@ -51,3 +51,16 @@ const name_changed = arr.map((item) => {
     return item
 })
 console.log(name_changed)
+
+
+
+
+
+
+const r_names_replaced = arr.filter((item) => {
+    return item.name[0] == 'r'
+}).map((item) => {
+    item['winner'] = true
+    return item
+})
+console.log(r_names_replaced)
