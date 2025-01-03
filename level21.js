@@ -15,7 +15,10 @@ scores.forEach((item)=>{
 console.log(percentages.toFixed(2))
 
 //Q2 what is the lowest marks scored? expected ouptut: 93
-const lowestMarks = Math.min(...scores.map(item => item[1]));
+const lowestMarks = Math.min(...scores.map(item => item[1]));//using spread operator la number lai xardai pass gareko math.min ma sidhai array pass garna mildaina
+
 console.log(lowestMarks);
+
+
 
 
