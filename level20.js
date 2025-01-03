@@ -75,11 +75,11 @@ console.log(output)
 // }
 // ]
 
-const winner  = arr.loop((item)=>{
-// return only 
- if (item.name[0]) === r
-}).loop((item)=>{
-// add a key item.winner = true  and return item
-})
+// const winner  = arr.loop((item)=>{
+// // return only 
+//  if (item.name[0]===r)
+// }).loop((item)=>{
+// // add a key item.winner = true  and return item
+// })
 
-console.log(winner)
+// console.log(winner)
