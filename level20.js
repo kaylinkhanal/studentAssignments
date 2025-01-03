@@ -55,9 +55,35 @@ console.log(item)
 // }
 // ]
 
-const newArr = arr.map((item)=>{
-     itenm.name += 'thapa'
-     return item
+const result = arr.map((item)=>{
+    item.name += ' thapa'
+    return item
+    })
+console.log(result)
+
+
+
+
+
+
+
+//Q4  return only names starting with r, and declare him the winner, by adding new key
+// winner as true
+
+//[{
+//     name: 'ram',
+//     winner: true
+//     age:30
+// }
+// ]
+
+const winner = arr.filter((item)=>{
+    return item.name[0] === 'r'
+}).map((item)=>{
+    item.winner = true
+    return item
 })
 
-console.log(newArr)
+console.log(winner)
+
+ 
