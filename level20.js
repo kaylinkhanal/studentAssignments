@@ -13,11 +13,16 @@ const arr = [{
 //     age: 40
 // }
 // ]
-// hint
-const output = arr.loop((item)=>{
-// item ko age > 40 
+const item = arr.filter((item)=>{
+    return item.age > 35
 })
 
-console.log(output)
+console.log(item)
+// hint
+//const output = arr.loop((item)=>{
+// item ko age > 40 
+//})
+
+//console.log(output)
 
 

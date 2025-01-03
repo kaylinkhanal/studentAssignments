@@ -25,8 +25,7 @@ const mapped = filtered.map((item)=>{
 
 console.log(mapped)
 
-
-
+ 
 // MAP                   vs                   FOREACH
 // -> returns new array                    -> doesn't return new array, but can modify existing array
 // ->                                      -> faster
