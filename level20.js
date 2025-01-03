@@ -61,12 +61,16 @@ console.log(result);
 // }
 // ]
 
-// const winner = arr
-//   .loop((item) => {
-//     // return only if item.name[0] is r
-//   })
-//   .loop((item) => {
-//     // add a key item.winner = true  and return item
-//   });
+const winner = arr
+  .map((item) => {
+    if (item["name"] === "r") {
+      return item;
+    }
+  })
+  .map((item) => {
+    item["winner"] = true;
+    return item;
+    // add a key item.winner = true  and return item
+  });
 
-// console.log(winner);
+console.log(winner);
