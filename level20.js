@@ -53,5 +53,24 @@ console.log(ageSum)
 //     age: 40
 // }
 // ]
+const surname = arr.map((item)=>{
+    return {
+        name: item.name + ' thapa',
+        age: item.age
+    }
+}   
+) 
+console.log(surname)  
+
+// //better way of doing it only changing the name
+// const updatedArr = arr.map((item)=>{
+//     return {
+//         ...item,
+//         name: item.name + ' thapa'//j cha item sabai dincha name ma chai change gardinxa
+//     }
+// }   
+// )
+// console.log(updatedArr)
+
 
 
