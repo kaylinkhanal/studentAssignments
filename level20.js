@@ -11,7 +11,10 @@ const arr = [
 
 //Q1 if age is greater than 35 return the item
 
-console.log(arr.filter((person) => person.age > 35));
+console.log(
+  "Q. No. 1 ",
+  arr.filter((person) => person.age > 35)
+);
 ////expected output:[{
 //     name: 'gopal',
 //     age: 40
@@ -32,7 +35,7 @@ arr.forEach((person) => {
   totalAge = totalAge + person.age;
 });
 
-console.log(totalAge);
+console.log("QN 2 ", totalAge);
 // output is 70
 // hint
 // let ageSum = 0;
@@ -58,7 +61,7 @@ const updatedArr = arr.map((person) => ({
   age: person.age,
 }));
 
-console.log(updatedArr);
+console.log("QN 3 ", updatedArr);
 
 //Q 4
 const newArray = arr
@@ -69,4 +72,4 @@ const newArray = arr
     age: item.age,
   }));
 
-console.log(newArray);
+console.log("QN 4 ", newArray);
