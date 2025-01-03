@@ -21,6 +21,7 @@ const mult = num.map((item)=>{
 })
 console.log(mult)
 
+console.log(mapped)
 
 
 // MAP                   vs                   FOREACH
