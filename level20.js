@@ -36,16 +36,13 @@ console.log(output)
 // output is 70
 // hint
 let ageSum = 0
-arr.loop((item)=>{
+arr.map((item)=>{
+    ageSum = ageSum + item.age
+
     // ageSum = ageSum  + item ko age
     })
 
-    console.log(ageSum)
-
-
-
-
-
+console.log(ageSum)
 
 
 //Q3.Expected output: [{
@@ -56,3 +53,5 @@ arr.loop((item)=>{
 //     age: 40
 // }
 // ]
+
+
