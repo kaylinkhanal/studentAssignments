@@ -34,7 +34,7 @@ console.log(output)
 let ageSum = 0
 arr.forEach((item)=>{
     // ageSum = ageSum  + item ko age
-    return ageSum = ageSum + item.age; 
+    ageSum = ageSum + item.age; 
     })
 
     console.log(ageSum)
