@@ -58,5 +58,7 @@ arr.forEach((item)=>{
 // }
 // ]
 const arr1=arr.map((item)=>{
+item.name='thapa'
 
 })
+console.log(arr1)
