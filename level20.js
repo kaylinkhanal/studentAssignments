@@ -80,12 +80,12 @@ console.log(result)
 
 const winner  = arr.filter((item)=>{
 // return only 
- if (item.name[0]==='r'){
-  item.name=winner
- }
+ return item.name[0]==='r'
+
+ 
 }).map((item)=>{
-   item.winner = true 
-    return item
+   item.winner=true
+   return item
 })
 
 console.log(winner)
