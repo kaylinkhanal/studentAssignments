@@ -22,3 +22,34 @@ const output = arr.filter((item)=>{
 console.log(output)
 
 
+
+
+
+
+
+
+
+// Q2// find total sum of ages of users
+// output is 70
+// hint
+let ageSum = 0
+arr.loop((item)=>{
+    // ageSum = ageSum  + item ko age
+    })
+
+    console.log(ageSum)
+
+
+
+
+
+
+
+//Q3.Expected output: [{
+//     name: 'ram thapa',
+//     age:30
+// },{
+//     name: 'gopal thapa',
+//     age: 40
+// }
+// ]
