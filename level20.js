@@ -36,7 +36,7 @@ console.log(output);
 // output is 70
 // hint
 let ageSum = 0
-arr.map((item)=>{
+arr.forEach((item)=>{
      ageSum=ageSum+item.age;
     })
 
