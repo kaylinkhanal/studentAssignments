@@ -9,7 +9,7 @@ scores.forEach((item) => {
 });
 
 // const percentage = total divide by ......
-const percentage = Math.floor(total / scores.length);
+const percentage = Math.tofixed(total / scores.length);
 console.log(`Percentage scored: ${percentage}%`);
 
 // Q2. What is the lowest marks scored? Expected output: 93
