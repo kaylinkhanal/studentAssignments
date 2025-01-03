@@ -12,16 +12,13 @@ const arr = [{
 //     age: 40
 // }
 // ]
-<<<<<<< HEAD
 // Filter the array where age is greater than 35
 const result = arr.filter(item => item.age > 35);
 console.log(result);
-=======
 // hint
 const output = arr.filter((item)=>{
 return item.age > 35
 })
->>>>>>> ff633266108519434d91d205ad3b71e48606fa67
 
 
 
@@ -62,3 +59,25 @@ const result1 = arr.map(item => ({
 }));
 
 console.log(result1);
+
+
+
+
+
+
+
+
+//Q4  return only names starting with r, and declare him the winner, by adding new key
+// winner as true
+
+//[{
+//     name: 'ram',
+//     winner: true
+//     age:30
+// }
+// ]
+
+const winner = arr.filter(item => item.name[0].toLowerCase() === 'r')
+.map(item => ({...item, winner: true}));
+console.log(winner);
+
