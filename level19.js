@@ -1,5 +1,11 @@
 const arr = [3, 5, 6, 1, "ram", false];
 
+// let sum = 0
+// const output = arr.forEach((item)=>{
+//     sum = sum + (parseInt(item) || 0)
+// })
+// console.log(sum)
+
 //q1. calulate the sum of Numbers
 let sum = 0;
 const output = arr.forEach((item) => {
