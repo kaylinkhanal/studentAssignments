@@ -35,10 +35,14 @@ console.log(output);
 // Q2// find total sum of ages of users
 // output is 70
 // hint
-let ageSum = 0
-arr.forEach((item)=>{
-     ageSum=ageSum+item.age;
-    })
+// let ageSum = 0
+// arr.forEach((item)=>{
+// <<<<<<< HEAD
+//      ageSum=ageSum+item.age;
+// =======
+//     ageSum = ageSum  + item.age
+// >>>>>>> 9852bb1b45be4941dddf0adfec9b17fad2be98ae
+//     })
 
 //     console.log(ageSum)
 
@@ -57,10 +61,33 @@ arr.forEach((item)=>{
 // }
 // ]
 
+// const result = arr.map((item)=>{
+//     item.name += ' thapa'
+//     return item
+//     })
+// console.log(result)
 
-const result=arr.map((item)=>{
-    item.name+=  'thapa'
-    return item
-   })
 
-   console.log(result);
+
+
+
+
+
+//Q4  return only names starting with r, and declare him the winner, by adding new key
+// winner as true
+
+//[{
+//     name: 'ram',
+//     winner: true
+//     age:30
+// }
+// ]
+
+const winner  = arr.filter((item)=>{
+return item.name[0]==='r';
+}).map((item)=>{
+item.winner=true
+return item
+})
+
+console.log(winner)
