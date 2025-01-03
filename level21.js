@@ -21,6 +21,10 @@ scores.forEach((item) => {
 console.log(Math.min(...scores_arr))
 
 // Alternative
+let min_score = Math.min(...scores.map((item) => item[1]))
+console.log(min_score)
+
+// Alternative
 let lowest_score = 100
 
 scores.forEach((item) => {

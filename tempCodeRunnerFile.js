@@ -1,1 +1,1 @@
-all_scores.push()
+scores.map((item) => item[1])
