@@ -7,9 +7,19 @@ const scores = [
 let total = 0
 scores.forEach((item)=>{
     // harek ko item[1] lai add to total
+    total += item[1]
 })
+let percentage = total/300 *100
+console.log(percentage)
+
 
 // const percentage = total divide by ......
 //console.log(percentage)
 //Q2 what is the lowest marks scored? expected ouptut: 93
+
+const marks = scores.map((item) => {
+return item[1]
+})
+const result = Math.min(...marks)
+console.log(result)
 
