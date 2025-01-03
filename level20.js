@@ -49,3 +49,10 @@ let ageSum = 0;
 //     age: 40
 // }
 // ]
+
+const addedCast = arr.map((item) => {
+  item.name += " thapa";
+  return item;
+});
+
+console.log(addedCast);
