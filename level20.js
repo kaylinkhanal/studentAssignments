@@ -36,7 +36,7 @@ console.log(output);
 // output is 70
 // hint
 let ageSum = 0
-arr.filter((item)=>{
+arr.map((item)=>{
      ageSum=ageSum+item.age;
     })
 
