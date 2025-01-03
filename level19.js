@@ -34,6 +34,9 @@ let output3 = arr.filter((item) => {
 console.log(output3);
 
 //q3. in the filtered result, multiply each number by 5 using .map
+const mapped = filtered.map((item)=>{
+    return item * 5
+})
 
 let output4 = output3.map((item) => {
   return item * 5;
