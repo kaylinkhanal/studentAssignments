@@ -18,9 +18,7 @@ console.log(percentage)
 
 //Q2 what is the lowest marks scored? expected ouptut: 93
 
- const lowestmarks=scores.f((item)=>{
-    
-})
+
 
 
 
