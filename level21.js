@@ -7,7 +7,11 @@ const scores = [
 let total = 0
 scores.forEach((item)=>{
     // harek ko item[1] lai add to total
+    total += item[1]
 })
+
+const percentage = (total/300) * 100
+console.log(percentage)
 
 // const percentage = total divide by ......
 //console.log(percentage)
