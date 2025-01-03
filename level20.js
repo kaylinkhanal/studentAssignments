@@ -58,8 +58,16 @@ const result1 = arr.map(item => ({
     age: item.age
 }));
 
+<<<<<<< HEAD
 console.log(result1);
 
+=======
+const result = arr.map((item)=>{
+    item.name += ' thapa'
+    return item
+    })
+console.log(result)
+>>>>>>> 5d64aec0697b77ff0fec138734eaa8e7a0c27dd3
 
 
 
