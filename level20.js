@@ -40,7 +40,7 @@ arr.forEach((item)=>{
      ageSum=ageSum+item.age;
     })
 
-    console.log(ageSum)
+//     console.log(ageSum)
 
 
 
