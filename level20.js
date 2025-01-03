@@ -41,10 +41,6 @@ arr.forEach((item)=>{
 
 
 
-
-
-
-
 //Q3.Expected output: [{
 //     name: 'ram thapa',
 //     age:30
@@ -53,3 +49,11 @@ arr.forEach((item)=>{
 //     age: 40
 // }
 // ]
+
+
+const num = arr.map((item)=>{
+    // ageSum = ageSum  + item ko age
+    return item.name + ' thapa' 
+    })
+
+    console.log(num)
