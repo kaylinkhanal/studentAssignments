@@ -12,9 +12,16 @@ const arr = [{
 //     age: 40
 // }
 // ]
+<<<<<<< HEAD
 // Filter the array where age is greater than 35
 const result = arr.filter(item => item.age > 35);
 console.log(result);
+=======
+// hint
+const output = arr.filter((item)=>{
+return item.age > 35
+})
+>>>>>>> ff633266108519434d91d205ad3b71e48606fa67
 
 
 
