@@ -57,3 +57,30 @@ console.log(outputs)
 
 //better way of doing it only changing the name
 const outputss = arr.map(item => ({ ...item, name: `${item.name} thapa` }))
+
+
+
+
+
+
+
+
+//Q4  return only names starting with r, and declare him the winner, by adding new key
+// winner as true
+
+//[{
+//     name: 'ram',
+//     winner: true
+//     age:30
+// }
+// ]
+
+
+const winner  = arr.filter((item)=>{
+return item.name.startsWith('r')
+}).map((item)=>{
+    return {...item, winner: true}
+// add a key item.winner = true  and return item
+})
+
+console.log(winner)
