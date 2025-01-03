@@ -13,16 +13,10 @@ const arr = [{
 //     age: 40
 // }
 // ]
-<<<<<<< HEAD
 
 const output = arr.filter((item)=>{
    if(item.age>35)
     return item;
-=======
-// hint
-const output = arr.filter((item)=>{
-return item.age > 35
->>>>>>> 8afe770b6e9960895fc4329761e3760077b0f50f
 })
 
 console.log(output)
@@ -59,13 +53,12 @@ console.log(agesum)
 // }
 // ]
 
-<<<<<<< HEAD
-const output1 = arr.filter((item)=>{
-    if(typeof item!== Boolean)
-        return item;
-}) 
-console.log(output1)
-=======
+
+const result = arr.map((item)=>{
+    item.name += ' thapa'
+    return item
+    })
+console.log(result)
 
 
 
@@ -91,4 +84,4 @@ const winner  = arr.loop((item)=>{
 })
 
 console.log(winner)
->>>>>>> 8afe770b6e9960895fc4329761e3760077b0f50f
+
