@@ -70,3 +70,9 @@ arr.loop((item)=>{
 //     age:30
 // }
 // ]
+
+const winner  = arr.loop((item)=>{
+// return only if item.name[0] is r
+}).loop((item)=>{
+// add a key item.winner = true  and return item
+})
