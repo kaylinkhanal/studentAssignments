@@ -52,3 +52,9 @@ console.log(agesum)
 //     age: 40
 // }
 // ]
+
+const output1 = arr.filter((item)=>{
+    if(typeof item!== Boolean)
+        return item;
+}) 
+console.log(output1)
