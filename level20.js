@@ -76,3 +76,5 @@ const winner  = arr.loop((item)=>{
 }).loop((item)=>{
 // add a key item.winner = true  and return item
 })
+
+console.log(winner)
