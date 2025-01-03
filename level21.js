@@ -4,5 +4,12 @@ const scores = [
 
 //Q1. calculate the percentage scored
 
+let total = 0
+scores.forEach((item)=>{
+    // harek ko item[1] lai add to total
+})
+
+// const percentage = total divide by ......
+//console.log(percentage)
 //Q2 what is the lowest marks scored? expected ouptut: 93
 
