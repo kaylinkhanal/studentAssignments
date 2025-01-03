@@ -28,6 +28,9 @@ const outputss=outputs.map((item)=>{
 })
 console.log(outputss)
 //q3. in the filtered result, multiply each number by 5 using .map
+const mapped = filtered.map((item)=>{
+    return item * 5
+})
 
 const arrr = [3,5,6,1, 'ram' ,false]
 const newarr = arrr.filter((item)=>{
