@@ -15,7 +15,7 @@ const arr = [{
 // ]
 // hint
 const output = arr.filter((item)=>{
-    if(item.age >= 40){
+    if(item.age > 35){
         return item
     }
 })
@@ -34,8 +34,8 @@ console.log(output)
 // output is 70
 // hint
 let ageSum = 0
-arr.loop((item)=>{
-    // ageSum = ageSum  + item ko age
+arr.forEach((item)=>{
+        ageSum = ageSum  + item.age
     })
 
     console.log(ageSum)
