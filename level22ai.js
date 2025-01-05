@@ -21,6 +21,10 @@ const phoneNumber = "123-456-7890";
 // Expected output:
 // "(123) 456-7890"
 
+const spiltPhoneNumber = phoneNumber.split("-");
+const [first, second, third] = spiltPhoneNumber;
+console.log(`(${first}) ${second}-${third}`);
+
 // console.log(phoneNumber.split("-"));
 
 const email = "test.user@example.com";
