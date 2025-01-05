@@ -79,10 +79,11 @@ console.log(result)
 // }
 // ]
 
-const winner  = arr.loop((item)=>{
-// return only if item.name[0] is r
-}).loop((item)=>{
-// add a key item.winner = true  and return item
+const winner  = arr.filter((item)=>{
+    return item.name[0] === 'r'
+}).map((item)=>{
+    item.winner = true 
+    return item
 })
 
 console.log(winner)
