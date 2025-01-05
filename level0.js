@@ -20,6 +20,37 @@ console.log(num * -1)  // Math.abs
 var temp = 25
 console.log(temp**3)   //Math.pow(temp, 3)
 
+// / **Question 1:**
+
+// What is the remainder when 15 is divided by 4?
+console.log(15%4)
+
+// **Question 2:**
+
+// If you have 25 apples and you give away 10, how many apples do you have left?
+let total= 25
+let away=10
+console.log(total-away)
+// **Question 3:**
+
+// What is the sum of 5, 10, and 15?
+let num1=5
+let num2=10
+let num3=15
+console.log((num1+num2+num3))
+// **Question 4:**
+
+// If you have 100 dollars and you spend 20 dollars, how much money do you have left?
+let c=100
+let d=20
+console.log(c-d)
+// **Question 5:**
+
+// What is the product of 2 and 5?
+let a=2
+let b=5
+console.log(a*b)
+
 
 
 
