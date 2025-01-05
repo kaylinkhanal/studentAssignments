@@ -68,10 +68,9 @@ console.log(result)
 // ]
 
 const winner  = arr.filter((item)=>{
- if (item.name[0] === 'r')
-    return item
+    return item.name[0] === 'r'
 }).map((item)=>{
-   if (item.winner) = true 
+    item.winner = true 
     return item
 })
 console.log(winner)
