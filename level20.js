@@ -85,3 +85,61 @@ const a1 = arr.filter((item)=>{
 
 })
 console.log(a1)
+
+const products = [
+    { name: 'Shirt', price: 20, category: 'Clothing' },
+    { name: 'Laptop', price: 1000, category: 'Electronics' },
+    { name: 'Mug', price: 5, category: 'Kitchen' },
+  ];
+
+const productsPrice = products.filter((item)=>{
+    if(item.price > 50){
+        return item
+    }
+})
+console.log(productsPrice)
+
+
+const sentences = [
+    'This is a great day.',
+    'The weather is terrible.',
+    'I love coding!',
+  ];
+let countLove= 0
+sentences.forEach((item)=>{
+    if(item.includes('love')){
+        countLove += 1
+    }
+})
+console.log(countLove)
+
+
+const orders = [
+    { id: 1, customer: 'Alice', items: ['Shirt', 'Hat'] },
+    { id: 2, customer: 'Bob', items: ['Laptop'] },
+    { id: 3, customer: 'Charlie', items: ['Mug', 'Pen'] },
+  ];
+const newar = []
+orders.forEach((item)=>{
+    newar.push({customer: item.customer, items:item.items.toString()})
+})
+console.log(newar)
+
+const data = [
+    { name: 'Apple', color: 'Red' },
+    { name: 'Banana', color: 'Yellow' },
+    { name: 'Orange', color: 'Orange' },
+  ];
+const newData = data.sort((a,b)=> a.color.localeCompare(b.color))
+console.log(data)
+
+
+const library = [
+    { title: 'The Lord of the Rings', author: 'J.R.R. Tolkien' },
+    { title: 'Pride and Prejudice', author: 'Jane Austen' },
+    { title: 'To Kill a Mockingbird', author: 'Harper Lee' },
+  ];
+
+
+const found = library.some((item)=> item.author === 'Some one')
+console.log(found)
