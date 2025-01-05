@@ -1,3 +1,4 @@
+//Q1.
 const sentence = "the quick brown fox jumps over the lazy dog";
 
 // Expected output:
@@ -11,16 +12,18 @@ const sentence = "the quick brown fox jumps over the lazy dog";
 //   lazy: 1,
 //   dog: 1
 // }
+const splittedSetence=sentence.split(' ')
+let temMap={}
+splittedSetence.forEach((item)=>{
+    temMap[item]=temMap[item] ? ++temMap[item]:1
+})
+console.log(temMap)
 
-const splitsentence=(sentence.split(' '))
-const newsentence={
-   
 
-}
-console.log(newsentence)
-
+//Q2.
 const phoneNumber = "123-456-7890";
-
+const[areaCode,prefix,lineNumber]=phoneNumber.split('-')
+console.log(`(${areaCode}) ${prefix}-${lineNumber}`)
 
 // Expected output:
 // "(123) 456-7890"
@@ -28,7 +31,7 @@ const phoneNumber = "123-456-7890";
 
 
 
-
+//Q3.
 const email = "test.user@example.com";
 
 // Expected output:
@@ -36,17 +39,14 @@ const email = "test.user@example.com";
 //   username: "test.user",
 //   domain: "example.com"
 // }
- 
-const newemail=(email.split('@'))
-const finaloutput={
-    username:newemail[0],
-    domain:newemail[1]
-}
-console.log(finaloutput)
+console.log({
+    userName:email.split('@')[0],
+    domain:email.split('@')[1],
+})
 
 
 
-
+//Q4.
 const words = ["apple", "banana", "apricot", "kiwi", "avocado"];
 
 // Expected output:
@@ -61,7 +61,7 @@ const output = words.filter((item)=>{
 console.log(output)
 
 
-
+//Q5.
 
 const mixedCase = "HeLlO wOrLd";
 
@@ -76,7 +76,7 @@ console.log(mixedCase.toLowerCase())
 
 
 
-
+//Q6.
 
 const phrase = "racecar";
 
