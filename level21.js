@@ -15,6 +15,8 @@ scores.forEach((item) => {
 
 console.log(total);
 
+console.log(total/3)
+
 // const percentage = total divide by ......
 //console.log(percentage)
 //Q2 what is the lowest marks scored? expected ouptut: 93
