@@ -24,9 +24,8 @@ senArray.forEach((item)=>{
 console.log(obj)
 const phoneNumber = "123-456-7890";
 const phone3 = phoneNumber.slice(0,3)
-console.log(phoneArray)
-const phone = `(${phone3}) ${phoneNumber.slice(3)}`
-console.log()
+const phone = `(${phone3}) ${phoneNumber.slice(4)}`
+console.log(phone)
 
 // Expected output:
 // "(123) 456-7890"
@@ -40,6 +39,12 @@ const email = "test.user@example.com";
 //   username: "test.user",
 //   domain: "example.com"
 // }
+const emailArray = email.split('@')
+const obj1= {username: emailArray[0],
+    domain: emailArray[1]
+}
+console.log(obj1)
+
 
 
 
@@ -65,11 +70,6 @@ const output = mixedCaseArray.map((item)=> item.toLocaleLowerCase())
 console.log(output.join(' '))
 
 
-const longString = "This is a very long string with multiple words.";
-
-// Expected output:
-// 7 (number of words)
-
 
 
 
@@ -77,3 +77,9 @@ const phrase = "racecar";
 
 // Expected output:
 // true (check if the string is a palindrome)
+const phraseArray = phrase.split('').reverse().join('')
+if(phrase === phraseArray){
+    console.log(true)
+}else{
+    console.log(false)
+}
