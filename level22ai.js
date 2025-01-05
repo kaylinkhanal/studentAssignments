@@ -66,7 +66,7 @@ const mixedCase = "HeLlO wOrLd";
 // Expected output:
 // "hello world" (all lowercase)
 const mixedCaseArray = mixedCase.split(' ')
-const output = mixedCaseArray.map((item)=> item.toLocaleLowerCase())
+const output = mixedCaseArray.map((item)=> item.toLowerCase())
 console.log(output.join(' '))
 
 
