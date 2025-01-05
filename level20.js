@@ -86,6 +86,20 @@ const a1 = arr.filter((item)=>{
 })
 console.log(a1)
 
+// Question:
+
+// Find all products with a price greater than 50 and categorize them by category.
+
+// Hint: Use filter and reduce methods.
+
+// Expected Output:
+
+// JavaScript
+
+// {
+//   "Electronics": [{ name: 'Laptop', price: 1000, category: 'Electronics' }]
+// }
+
 const products = [
     { name: 'Shirt', price: 20, category: 'Clothing' },
     { name: 'Laptop', price: 1000, category: 'Electronics' },
@@ -100,6 +114,16 @@ const productsPrice = products.filter((item)=>{
 console.log(productsPrice)
 
 
+
+// Count the number of sentences that contain the word 'love'.
+
+// Hint: Use filter and length property.
+
+// Expected Output:
+
+// JavaScript
+
+// 1 
 const sentences = [
     'This is a great day.',
     'The weather is terrible.',
@@ -114,6 +138,20 @@ sentences.forEach((item)=>{
 console.log(countLove)
 
 
+
+// Create a new array containing only the customer names and their ordered items (as a single string).
+
+// Hint: Use map and join methods.
+
+// Expected Output:
+
+// JavaScript
+
+// [
+//   { customer: 'Alice', items: 'Shirt,Hat' },
+//   { customer: 'Bob', items: 'Laptop' },
+//   { customer: 'Charlie', items: 'Mug,Pen' }
+// ]
 const orders = [
     { id: 1, customer: 'Alice', items: ['Shirt', 'Hat'] },
     { id: 2, customer: 'Bob', items: ['Laptop'] },
@@ -125,6 +163,20 @@ orders.forEach((item)=>{
 })
 console.log(newar)
 
+// Sort the data array by the color property in descending order.
+
+// Hint: Use sort method with a custom compare function.
+
+// Expected Output:
+
+// JavaScript
+
+// [
+//   { name: 'Orange', color: 'Orange' }, 
+//   { name: 'Banana', color: 'Yellow' }, 
+//   { name: 'Apple', color: 'Red' } 
+// ]
+
 const data = [
     { name: 'Apple', color: 'Red' },
     { name: 'Banana', color: 'Yellow' },
@@ -134,6 +186,18 @@ const newData = data.sort((a,b)=> a.color.localeCompare(b.color))
 console.log(data)
 
 
+
+
+
+// Check if there are any books in the library written by a specific author (e.g., 'Charles Dickens').
+
+// Hint: Use some method.
+
+// Expected Output:
+
+// JavaScript
+
+// false 
 const library = [
     { title: 'The Lord of the Rings', author: 'J.R.R. Tolkien' },
     { title: 'Pride and Prejudice', author: 'Jane Austen' },
