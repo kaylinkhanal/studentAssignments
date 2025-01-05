@@ -12,6 +12,9 @@ const sentence = "the quick brown fox jumps over the lazy dog";
 //   dog: 1
 // }
 
+const splitSentence = sentence.split(" ")
+
+
 
 const phoneNumber = "123-456-7890";
 
@@ -28,14 +31,29 @@ const email = "test.user@example.com";
 //   domain: "example.com"
 // }
 
+const splitEmail = email.split('@')
 
+const [userName, domainName] = splitEmail
 
+const output3 = {
+    username : userName,
+    domain: domainName
+}
+
+console.log(output3)
 
 const words = ["apple", "banana", "apricot", "kiwi", "avocado"];
 
 // Expected output:
 // ["apple", "apricot", "avocado"] (all words starting with "a")
+const output4 = words.filter(
+    (word) =>{
+        if(word[0] === 'a')
+            return word
+    }
+)
 
+console.log(output4)
 
 
 const mixedCase = "HeLlO wOrLd";
@@ -43,17 +61,26 @@ const mixedCase = "HeLlO wOrLd";
 // Expected output:
 // "hello world" (all lowercase)
 
+const lowercase = mixedCase.toLocaleLowerCase()
+console.log(lowercase)
 
+// const longString = "This is a very long string with multiple words.";
 
-const longString = "This is a very long string with multiple words.";
-
-// Expected output:
-// 7 (number of words)
+// // Expected output:
+// // 7 (number of words)
 
 
 
 
 const phrase = "racecar";
 
+
 // Expected output:
 // true (check if the string is a palindrome)
+
+let revPhrase = phrase.split("").reverse().join("");
+if (phrase === revPhrase) {
+  console.log(true);
+} else {
+  console.log(false);
+}
