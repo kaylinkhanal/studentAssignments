@@ -8,7 +8,6 @@ let total = 0;
 scores.forEach((item) => {
    total = total + item[1];
 })
-// console.log(total)
 let percentage = (total/ 300 * 100).toFixed(2);
 console.log(percentage);
 
@@ -17,7 +16,5 @@ console.log(percentage);
 const output = scores.map((item) => {
    return item[1];
 })
-// console.log(output);
-
 const lowestMarks = Math.min(...output);
 console.log(lowestMarks);

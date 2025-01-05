@@ -12,7 +12,8 @@ let sum = 0
 const output = arr.map((item)=>{
     if (item > 0){
         sum = sum + item;
-    });
+    }   
+});
 
     // Method 2
 // const output = arr.forEach((item)=>{
@@ -36,8 +37,8 @@ console.log(filterr);
 
 
 //q3. in the filtered result, multiply each number by 5 using .map
-const mapped = filtered.map((item)=>{
-    return item * 5
+const mapped = filterr.map((item)=>{
+    return item * 5;
 })
 
 const multi = filterr.map((item) => {
