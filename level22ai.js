@@ -30,6 +30,9 @@ const email = "test.user@example.com";
 //   username: "test.user",
 //   domain: "example.com"
 // }
+const spiltEmail = email.split("@");
+const [username, domain] = spiltEmail;
+console.log({ username, domain });
 
 const words = ["apple", "banana", "apricot", "kiwi", "avocado"];
 
@@ -38,7 +41,6 @@ const words = ["apple", "banana", "apricot", "kiwi", "avocado"];
 
 const startingALetter = words.filter((item) => {
   if (item.charAt(0) === "a") return item;
-  //   console.log(item);
 });
 
 console.log(startingALetter);
@@ -49,11 +51,6 @@ const mixedCase = "HeLlO wOrLd";
 // "hello world" (all lowercase)
 
 console.log(mixedCase.toLocaleLowerCase());
-
-const longString = "This is a very long string with multiple words.";
-
-// Expected output:
-// 7 (number of words)
 
 const phrase = "racecar";
 
