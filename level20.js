@@ -56,7 +56,7 @@ console.log(item)
 // ]
 
 const result = arr.map((item)=>{
-    item.name += ' thapa'
+    item.name += ' thapa' 
     return item
     })
 console.log(result)
