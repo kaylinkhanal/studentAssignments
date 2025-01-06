@@ -1,4 +1,13 @@
 const sentence = "the quick brown fox jumps over the lazy dog";
+<<<<<<< HEAD
+=======
+const splittedSentence = sentence.split(' ')
+let tempMap = {}
+splittedSentence.forEach((item)=>{
+    tempMap[item] =  tempMap[item] ?  ++tempMap[item] : 1
+})
+
+>>>>>>> d1aa61cb1656516302a136e89076af313da6f736
 // Expected output:
 // {
 //   the: 2,
@@ -10,6 +19,7 @@ const sentence = "the quick brown fox jumps over the lazy dog";
 //   lazy: 1,
 //   dog: 1
 // }
+<<<<<<< HEAD
 const checkword = (sentence) => {
 const words = sentence.split(" ");
 const wordCount = {};
@@ -40,14 +50,28 @@ const obj={
     domain:str[1]
 }
 console.log(obj)
+=======
+//hint 1 : get something like: 
+// ['the', 'quick' ,'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog];
+//hint 2: loop the array
+
+const phoneNumber = "123-456-7890";
+const [areaCode, prefix, lineNumber] = phoneNumber.split('-')
+console.log(`(${areaCode}) ${prefix}-${lineNumber}`)
+// Expected output:
+// "(123) 456-7890"
+
+const email = "test.user@example.com";
+>>>>>>> d1aa61cb1656516302a136e89076af313da6f736
 // Expected output:
 // {
 //   username: "test.user",
 //   domain: "example.com"
 // }
-
-
-
+console.log({
+    userName: email.split('@')[0],
+    domain: email.split('@')[1],
+})
 
 
 
@@ -59,10 +83,13 @@ const word=words.filter((item)=>{
 console.log(word)
 // Expected output:
 // ["apple", "apricot", "avocado"] (all words starting with "a")
-
-
+const output = words.filter((item)=>{
+if(item[0] === 'a') return item
+})
+console.log(output)
 
 const mixedCase = "HeLlO wOrLd";
+console.log(mixedCase.toLowerCase())
 
 // Expected output:
 // "hello world" (all lowercase)
@@ -71,6 +98,7 @@ console.log(lower)
 
 
 
+<<<<<<< HEAD
 
 
 const longString = "This is a very long string with multiple words.";
@@ -79,8 +107,10 @@ const longString = "This is a very long string with multiple words.";
 // 7 (number of words)
 
 
+=======
+>>>>>>> d1aa61cb1656516302a136e89076af313da6f736
 const phrase = "racecar";
-
+console.log(phrase.split('').reverse().join('') === phrase)
 // Expected output:
 // true (check if the string is a palindrome)
 const Palindrome = (str) => {
