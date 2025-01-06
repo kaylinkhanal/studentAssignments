@@ -12,17 +12,15 @@ const sentence = "the quick brown fox jumps over the lazy dog";
 //   dog: 1
 // }
 
-// const spiltSentence = sentence.split(" ");
-
-// spiltSentence.filter((item) => {});
+const spiltSentences = sentence.split(" ");
+let tempMap = {};
 
 const phoneNumber = "123-456-7890";
 
 // Expected output:
 // "(123) 456-7890"
 
-const spiltPhoneNumber = phoneNumber.split("-");
-const [first, second, third] = spiltPhoneNumber;
+const [first, second, third] = phoneNumber.split("-");
 console.log(`(${first}) ${second}-${third}`);
 
 // console.log(phoneNumber.split("-"));
@@ -57,6 +55,7 @@ const mixedCase = "HeLlO wOrLd";
 console.log(mixedCase.toLocaleLowerCase());
 
 const phrase = "racecar";
+console.log(phrase.split("").reverse().join());
 
 // Expected output:
 // true (check if the string is a palindrome)
