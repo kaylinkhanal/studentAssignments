@@ -25,5 +25,11 @@ console.log(b>0 && b<15 && c%2!=0)
 
 // -- what is varaibles and constants and difference between let, var, const?
 
+// Check if x is less than y and y is less than or equal to z.
+// JavaScript
 
+ var x = 5;
+ var y = 8;
+ var z = 8;
+console.log(x<y && y<= z);
 

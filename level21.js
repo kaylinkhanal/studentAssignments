@@ -21,3 +21,5 @@ const output2 = scores.map((item)=>{
 })
 
 const result = Math.min(...output2)
+
+
