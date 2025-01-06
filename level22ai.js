@@ -63,3 +63,6 @@ const phrase = "racecar";
 // Expected output:
 // true (check if the string is a palindrome)
 console.log(phrase.split().reverse().join())
+
+
+//Reduce Method
