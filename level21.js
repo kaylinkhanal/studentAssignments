@@ -24,4 +24,8 @@ const lowmarks = scores.forEach((item) => {
   return item[1];
 });
 
-console.log(lowmarks);
+const output2 = scores.map((item) => {
+  return item[1];
+});
+
+const result = Math.min(...output2);
