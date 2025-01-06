@@ -33,6 +33,7 @@
 // 4. 
 
 
+//Q
 const cart = [
     {id:3, items:'hawkins cooker', quantity:3, price: 1000},
     {id:4, items:'baltra cooker', quantity:2, price: 4000},
