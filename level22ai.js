@@ -13,25 +13,26 @@ const sentence = "the quick brown fox jumps over the lazy dog";
 //   dog: 1
 // }
 
-// let all_words = sentence.split(' ')
-// let unique_words = new Set(all_words)
-// console.log(unique_words)
-// // let word_counter = {
-// //     the:0,
-// //     quick:0,
+let all_words = sentence.split(' ')
+//converting to set for getting unique words
+let unique_words = Array.from(new Set(all_words))
+console.log(unique_words)
 
-// // }
-// let counter = [0,0,0,0,0,0,0,0]
-// for (let i=0; i<unique_words.size; i++){
-//     for (let j=0; j<all_words.length; j++){
-//         if(unique_words[i]==all_words[j]){
-//             counter[i] = counter[i]+1
-//             console.log(unique_words[i])
-//         }
-//     }
-// }
-// console.log(unique_words[1])
-// console.log(all_words.length)
+
+let counter = [0,0,0,0,0,0,0,0]
+for (let i=0; i<unique_words.length; i++){
+    for (let j=0; j<all_words.length; j++){
+        if(unique_words[i]==all_words[j]){
+            counter[i] = counter[i]+1
+        }
+    }
+}
+console.log(counter)
+let output = {}
+for (let i=0; i<unique_words.length; i++){
+    output[unique_words[i]] = counter[i]
+}
+console.log(output)
 
 
 //Q
