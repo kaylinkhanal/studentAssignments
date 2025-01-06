@@ -45,8 +45,9 @@ const cart = [
 
 //expected output: 11000
  const output  =cart.reduce((sum, nextItem,nextId)=>{
-   sum = sum + nextItem
-   return sum
+  debugger;
+  sum +=  nextItem.price * nextItem.quantity
+  return sum
 },0)
 
 
