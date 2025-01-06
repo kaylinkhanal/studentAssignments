@@ -13,6 +13,12 @@ const sentence = "the quick brown fox jumps over the lazy dog";
 // }
 
 const splitSentence = sentence.split(" ")
+const tempMap = {}
+splitSentence.forEach((item)=>{
+    tempMap[item] = tempMap[item] + item ? item : 1
+})
+
+console.log(tempMap)
 
 
 
@@ -21,8 +27,8 @@ const phoneNumber = "123-456-7890";
 // Expected output:
 // "(123) 456-7890"
 
-
-
+const [areacode, expres,        linenumber] = phoneNumber.split("-")
+console.log(`(${areacode}) ${expres}-${linenumber}`)
 const email = "test.user@example.com";
 
 // Expected output:
