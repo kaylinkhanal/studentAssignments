@@ -1,4 +1,9 @@
 const sentence = "the quick brown fox jumps over the lazy dog";
+const splittedSentence = sentence.split(' ')
+let tempMap = {}
+splittedSentence.forEach((item)=>{
+    tempMap[item] =  tempMap[item] ?  ++tempMap[item] : 1
+})
 
 // Expected output:
 // {
@@ -30,10 +35,7 @@ console.log(phone)
 // Expected output:
 // "(123) 456-7890"
 
-
-
 const email = "test.user@example.com";
-
 // Expected output:
 // {
 //   username: "test.user",
@@ -62,6 +64,7 @@ console.log(filterA)
 
 
 const mixedCase = "HeLlO wOrLd";
+console.log(mixedCase.toLowerCase())
 
 // Expected output:
 // "hello world" (all lowercase)
@@ -74,7 +77,7 @@ console.log(output.join(' '))
 
 
 const phrase = "racecar";
-
+console.log(phrase.split('').reverse().join('') === phrase)
 // Expected output:
 // true (check if the string is a palindrome)
 const phraseArray = phrase.split('').reverse().join('')
