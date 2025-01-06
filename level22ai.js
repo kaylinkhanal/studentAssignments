@@ -1,4 +1,9 @@
 const sentence = "the quick brown fox jumps over the lazy dog";
+const splittedSentence = sentence.split(' ')
+let tempMap = {}
+splittedSentence.forEach((item)=>{
+    tempMap[item] =  tempMap[item] ?  ++tempMap[item] : 1
+})
 
 // Expected output:
 // {
@@ -16,7 +21,8 @@ const spiltSentences = sentence.split(" ");
 let tempMap = {};
 
 const phoneNumber = "123-456-7890";
-
+const [areaCode, prefix, lineNumber] = phoneNumber.split('-')
+console.log(`(${areaCode}) ${prefix}-${lineNumber}`)
 // Expected output:
 // "(123) 456-7890"
 
@@ -26,7 +32,6 @@ console.log(`(${first}) ${second}-${third}`);
 // console.log(phoneNumber.split("-"));
 
 const email = "test.user@example.com";
-
 // Expected output:
 // {
 //   username: "test.user",
@@ -48,6 +53,7 @@ const startingALetter = words.filter((item) => {
 console.log(startingALetter);
 
 const mixedCase = "HeLlO wOrLd";
+console.log(mixedCase.toLowerCase())
 
 // Expected output:
 // "hello world" (all lowercase)
