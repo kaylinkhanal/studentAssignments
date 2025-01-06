@@ -1,6 +1,7 @@
 //Q
 const sentence = "the quick brown fox jumps over the lazy dog";
 
+
 // Expected output:
 // {
 //   the: 2,
@@ -12,7 +13,14 @@ const sentence = "the quick brown fox jumps over the lazy dog";
 //   lazy: 1,
 //   dog: 1
 // }
+const splittedSentence = sentence.split(' ')
+let tempMap = {}
+splittedSentence.forEach((item)=>{
+    tempMap[item] =  tempMap[item] ?  ++tempMap[item] : 1
+})
+console.log(tempMap)
 
+//Alternative
 let all_words = sentence.split(' ')
 //converting to set for getting unique words
 let unique_words = Array.from(new Set(all_words))
@@ -37,7 +45,8 @@ console.log(output)
 
 //Q
 const phoneNumber = "123-456-7890";
-
+const [areaCode, prefix, lineNumber] = phoneNumber.split('-')
+console.log(`(${areaCode}) ${prefix}-${lineNumber}`)
 // Expected output:
 // "(123) 456-7890"
 let splitted = phoneNumber.split('-')
@@ -46,7 +55,6 @@ console.log(`(${splitted[0]}) ${splitted[1]}-${splitted[2]}`)
 
 //Q
 const email = "test.user@example.com";
-
 // Expected output:
 // {
 //   username: "test.user",
@@ -69,6 +77,7 @@ console.log(a_words)
 
 //Q
 const mixedCase = "HeLlO wOrLd";
+console.log(mixedCase.toLowerCase())
 
 // Expected output:
 // "hello world" (all lowercase)
@@ -78,7 +87,7 @@ console.log(`${mixedCase.toLowerCase()}`)
 
 //Q
 const phrase = "racecar";
-
+console.log(phrase.split('').reverse().join('') === phrase)
 // Expected output:
 // true (check if the string is a palindrome)
 function palindrome_checker(word){
