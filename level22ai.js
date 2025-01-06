@@ -1,5 +1,6 @@
 const sentence = "the quick brown fox jumps over the lazy dog";
 
+
 // Expected output:
 // {
 //   the: 2,
@@ -33,6 +34,14 @@ const email = "test.user@example.com";
 //   domain: "example.com"
 // }
 
+function output(email){
+    const useSplit = email.split('@')
+    return {
+        userName: useSplit[0],
+        domain: useSplit[1]
+    };
+}
+console.log(output(email))
 
 
 
@@ -40,6 +49,11 @@ const words = ["apple", "banana", "apricot", "kiwi", "avocado"];
 
 // Expected output:
 // ["apple", "apricot", "avocado"] (all words starting with "a")
+const result = words.filter((item)=>{
+  if (item[0] === 'a')
+    return item
+})
+console.log(result)
 
 
 
@@ -48,12 +62,8 @@ const mixedCase = "HeLlO wOrLd";
 // Expected output:
 // "hello world" (all lowercase)
 
+console.log(mixedCase.toLowerCase())
 
-
-const longString = "This is a very long string with multiple words.";
-
-// Expected output:
-// 7 (number of words)
 
 
 
@@ -62,3 +72,4 @@ const phrase = "racecar";
 
 // Expected output:
 // true (check if the string is a palindrome)
+console.log(phrase.split('').reverse().join().split())
