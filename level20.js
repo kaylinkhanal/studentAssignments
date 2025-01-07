@@ -77,17 +77,10 @@ console.log(result)
 // }
 // ]
 
-<<<<<<< HEAD
-const winner = arr.filter((item)=>{
-    return item.name[0]==='r'
-}).map((item)=>{
-    item.winner= true
-=======
 const winner  = arr.filter((item)=>{
     return item.name[0] === 'r'
 }).map((item)=>{
     item.winner = true 
->>>>>>> 1657f0bb4081084a5f467dd7c529685208d0b662
     return item
 })
 
