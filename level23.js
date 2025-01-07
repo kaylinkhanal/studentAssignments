@@ -46,12 +46,20 @@ const cart = [
 // console.log(sum)
 
 //expected output: 11000
- const output  =cart.reduce((sum, nextItem,nextId)=>{
-   sum = sum + nextItem
-   return sum
-},0)
+//  const output  =cart.reduce((sum, nextItem,nextId)=>{
+//    sum = sum + nextItem
+//    return sum
+// },0)
 
 
-console.log(output)
+// console.log(output)
+// const cart = [
+//   {id: 3, item: 'hawkins cooker', quantity: 3, price: 1000},
+//   {id: 4, item: 'baltra cooker', quantity: 2, price: 4000},
+// ];
+
+const total = cart.reduce((sum, item) => 
+  sum + item.price * item.quantity, 0);
+console.log(total); 
 
 
