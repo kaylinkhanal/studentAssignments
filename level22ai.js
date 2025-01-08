@@ -1,4 +1,9 @@
 const sentence = "the quick brown fox jumps over the lazy dog";
+const splittedSentence = sentence.split(' ')
+let tempMap = {}
+splittedSentence.forEach((item)=>{
+    tempMap[item] =  tempMap[item] ?  ++tempMap[item] : 1
+})
 
 // Expected output:
 // {
@@ -45,9 +50,10 @@ console.log(obj);
 //   username: "test.user",
 //   domain: "example.com"
 // }
-
-
-
+console.log({
+    userName: email.split('@')[0],
+    domain: email.split('@')[1],
+})
 
 // Q
 const words = ["apple", "banana", "apricot", "kiwi", "avocado"];
@@ -60,11 +66,14 @@ const wordsWithA = words.filter((item) => {
 console.log(wordsWithA);
 // Expected output:
 // ["apple", "apricot", "avocado"] (all words starting with "a")
-
-
+// const output = words.filter((item)=>{
+// if(item[0] === 'a') return item
+// })
+// console.log(output)
 
 // Q
 const mixedCase = "HeLlO wOrLd";
+console.log(mixedCase.toLowerCase())
 
 console.log(mixedCase.toLowerCase());
 
