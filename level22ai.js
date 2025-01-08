@@ -86,4 +86,3 @@ if(phrase === phraseArray){
 }else{
     console.log(false)
 }
-
