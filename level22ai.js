@@ -1,9 +1,9 @@
 const sentence = "the quick brown fox jumps over the lazy dog";
-const splittedSentence = sentence.split(' ')
-let tempMap = {}
-splittedSentence.forEach((item)=>{
-    tempMap[item] =  tempMap[item] ?  ++tempMap[item] : 1
-})
+const splittedSentence = sentence.split(" ");
+let tempMap = {};
+splittedSentence.forEach((item) => {
+  tempMap[item] = tempMap[item] ? ++tempMap[item] : 1;
+});
 
 // Expected output:
 // {
@@ -18,11 +18,10 @@ splittedSentence.forEach((item)=>{
 // }
 
 const spiltSentences = sentence.split(" ");
-let tempMap = {};
 
 const phoneNumber = "123-456-7890";
-const [areaCode, prefix, lineNumber] = phoneNumber.split('-')
-console.log(`(${areaCode}) ${prefix}-${lineNumber}`)
+const [areaCode, prefix, lineNumber] = phoneNumber.split("-");
+console.log(`(${areaCode}) ${prefix}-${lineNumber}`);
 // Expected output:
 // "(123) 456-7890"
 
@@ -53,7 +52,7 @@ const startingALetter = words.filter((item) => {
 console.log(startingALetter);
 
 const mixedCase = "HeLlO wOrLd";
-console.log(mixedCase.toLowerCase())
+console.log(mixedCase.toLowerCase());
 
 // Expected output:
 // "hello world" (all lowercase)
