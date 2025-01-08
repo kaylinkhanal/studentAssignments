@@ -1,4 +1,9 @@
 const sentence = "the quick brown fox jumps over the lazy dog";
+const splittedSentence = sentence.split(' ')
+let tempMap = {}
+splittedSentence.forEach((item)=>{
+    tempMap[item] =  tempMap[item] ?  ++tempMap[item] : 1
+})
 
 
 // Expected output:
@@ -12,10 +17,13 @@ const sentence = "the quick brown fox jumps over the lazy dog";
 //   lazy: 1,
 //   dog: 1
 // }
-
+//hint 1 : get something like: 
+// ['the', 'quick' ,'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog];
+//hint 2: loop the array
 
 const phoneNumber = "123-456-7890";
-
+const [areaCode, prefix, lineNumber] = phoneNumber.split('-')
+console.log(`(${areaCode}) ${prefix}-${lineNumber}`)
 // Expected output:
 // "(123) 456-7890"
 
@@ -27,7 +35,6 @@ console.log(useSplit(phoneNumber))
 
 
 const email = "test.user@example.com";
-
 // Expected output:
 // {
 //   username: "test.user",
@@ -58,6 +65,7 @@ console.log(result)
 
 
 const mixedCase = "HeLlO wOrLd";
+console.log(mixedCase.toLowerCase())
 
 // Expected output:
 // "hello world" (all lowercase)
@@ -69,7 +77,7 @@ console.log(mixedCase.toLowerCase())
 
 
 const phrase = "racecar";
-
+console.log(phrase.split('').reverse().join('') === phrase)
 // Expected output:
 // true (check if the string is a palindrome)
 console.log(phrase.split('').reverse().join().split())
