@@ -28,6 +28,8 @@
 // 3. accumulator ---> a storable value in  each iteration
 // 4.
 
+
+// Using in cart in ecommerce
 const cart = [
   { id: 3, item: "hawkins cooker", quantity: 3, price: 1000 },
   { id: 4, item: "baltra cooker", quantity: 2, price: 4000 },
