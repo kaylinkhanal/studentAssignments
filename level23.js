@@ -1,38 +1,17 @@
-// // PURE VS IMPURE FUNCTION IN JAVASCRIPT
+const obj = {
+  math: 3,
+  science:5,
+  comp: 4
+}
 
-// // PURE:
-// // 1. Same output for same input
-// // 2. this function depends on input parameters
-// // 3. Only uses its own scopes
-// // 4. Testing/Debugging is easier
-// // should have return
+//O O
+for (let item in obj){
+  console.log(item)
+}
 
-// // IMPURE:
-// // 1. side efffect, modifies state: modifies variaibles in other/global scope
-// // 2. Depends on external factors/resources
-// // // loop over an array and save each item to database
+//Calculate the sum of all score
 
-// function functionincrement(count) {
-//   count += 1;
-//     console.log(count)
-// }
-
-// functionincrement(0)
-
-// // MAP --> array
-// //FILTER --> array
-
-// //REDUCE
-// 1. can return a single value, [], {}
-// 2. combine, transform as well as aggregate
-// 3. accumulator ---> a storable value in  each iteration
-// 4.
-
-// Using in cart in ecommerce
-const cart = [
-  { id: 3, item: "hawkins cooker", quantity: 3, price: 1000 },
-  { id: 4, item: "baltra cooker", quantity: 2, price: 4000 },
-];
+const arr =[{ram:40},{gopal:50},{hari:60}]
 
 // let sum = 0
 // cart.forEach((item)=>{
@@ -41,22 +20,12 @@ const cart = [
 // console.log(sum)
 
 //expected output: 11000
-const cartAmount = cart.reduce((acc, item) => {
-  return acc + item.quantity * item.price;
-}, 0);
+ const output  =cart.reduce((sum, nextItem,nextId)=>{
+   sum = sum + nextItem
+   return sum
+},0)
 
-console.log(cartAmount);
 
-// For in loop vs for of loop
+console.log(output)
 
-const array1 = ['a', 'b', 'c'];
 
-for (const element of array1) {
-  console.log(element);
-}
-
-const object = { a: 1, b: 2, c: 3 };
-
-for (const property in object) {
-  console.log(`${property}: ${object[property]}`);
-}
