@@ -40,7 +40,7 @@ for(let key of arr){
   const [name] = keysArray
   if(mrk > score){
     score = mrk
-    higherScore = name
+    higherScorer = name
   }
 }
 console.log(higherScorer)
