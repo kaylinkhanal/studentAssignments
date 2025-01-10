@@ -1,10 +1,9 @@
 const sentence = "the quick brown fox jumps over the lazy dog";
-const splittedsentence = sentence.split(' ')
+const splittedSentence = sentence.split(' ')
 let tempMap = {}
-splittedsentence.forEach((item)=>{
-    tempMap[item] = tempMap[item] ? ++tempMap[item] : 1
+splittedSentence.forEach((item)=>{
+    tempMap[item] =  tempMap[item] ?  ++tempMap[item] : 1
 })
-console.log(tempMap)
 
 // Expected output:
 // {
@@ -17,14 +16,15 @@ console.log(tempMap)
 //   lazy: 1,
 //   dog: 1
 // }
-
+//hint 1 : get something like: 
+// ['the', 'quick' ,'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog];
+//hint 2: loop the array
 
 const phoneNumber = "123-456-7890";
+const [areaCode, prefix, lineNumber] = phoneNumber.split('-')
+console.log(`(${areaCode}) ${prefix}-${lineNumber}`)
 // Expected output:
 // "(123) 456-7890"
-const [areaCode, prefixe, lineNumber] = phoneNumber.split('-')
-console.log(`(${areaCode}) ${prefixe} ${lineNumber}`);
-
 
 const email = "test.user@example.com";
 // Expected output:
@@ -32,34 +32,27 @@ const email = "test.user@example.com";
 //   username: "test.user",
 //   domain: "example.com"
 // }
-let output1 = (email.split('@'));
-console.log("username:", output1[0].slice()+ "  domain:",output1[1].slice());
-
-
-
+console.log({
+    userName: email.split('@')[0],
+    domain: email.split('@')[1],
+})
 
 const words = ["apple", "banana", "apricot", "kiwi", "avocado"];
 // Expected output:
 // ["apple", "apricot", "avocado"] (all words starting with "a")
-const output = words.filter((words)=>{
-    if(words[0] === 'a')
-        return words
+const output = words.filter((item)=>{
+if(item[0] === 'a') return item
 })
-console.log(output);
-
+console.log(output)
 
 const mixedCase = "HeLlO wOrLd";
+console.log(mixedCase.toLowerCase())
+
 // Expected output:
 // "hello world" (all lowercase)
-console.log(mixedCase.toLowerCase());
-
-
-const longString = "This is a very long string with multiple words.";
-// Expected output:
-// 7 (number of words)
-
 
 const phrase = "racecar";
+console.log(phrase.split('').reverse().join('') === phrase)
 // Expected output:
 // true (check if the string is a palindrome)
 console.log(phrase.split().reverse().join())
