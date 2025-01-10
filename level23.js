@@ -1,5 +1,3 @@
-// // PURE VS IMPURE FUNCTION IN JAVASCRIPT
-
 
 
 // // PURE:
@@ -51,4 +49,28 @@ const output = cart.reduce((sum, nextItem) => {
 
 console.log(output)
 
+//_______________________________________//
+
+const obj = {
+    math: 3,
+    science:5,
+    comp: 4
+  }
+
+  //Calculate the sum of all score
+  //O O
+  let totalSum = 0;
+  for (let item in obj){
+    totalSum  += obj[item];   
+  }
+  console.log(totalSum)
+  
+  
+  
+
+const arr =[{ram:40},{gopal:50},{hari:60}]
+
+// using for of/for in output the highest marks scorer
+//expected ouput:
+//hari
 
