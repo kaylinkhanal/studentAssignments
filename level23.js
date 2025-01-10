@@ -1,5 +1,17 @@
-// // PURE VS IMPURE FUNCTION IN JAVASCRIPT
+const obj = {
+  math: 3,
+  science:5,
+  comp: 4
+}
 
+//O O
+//Calculate the sum of all score
+// let sum = 0;
+
+// for (let item in obj) {
+//   sum += obj[item];  
+// }
+// console.log("Total Sum:", sum)
 
 
 // // PURE:
@@ -32,10 +44,10 @@
 // 4. 
 
 
-const cart = [
-    {id: 3, item: 'hawkins cooker', quantity: 3, price: 1000},
-    {id: 4, item: 'baltra cooker', quantity: 2, price: 4000},
-]
+// const cart = [
+//     {id: 3, item: 'hawkins cooker', quantity: 3, price: 1000},
+//     {id: 4, item: 'baltra cooker', quantity: 2, price: 4000},
+// ]
 
 
 
@@ -64,4 +76,25 @@ const cart = [
 // console.log(total); 
 
 
+const arr =[{
+    ram:40
 
+},{
+    gopal:50
+
+},
+
+{
+    hari:60
+
+}]
+
+for(let num of arr){
+    
+}
+
+
+
+// using for of/for in output the highest marks scorer
+//expected ouput:
+//hari
