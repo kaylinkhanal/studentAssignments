@@ -51,3 +51,4 @@ const output = cart.reduce((sum, nextItem) => {
 
 console.log(output)
 
+
