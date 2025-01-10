@@ -4,66 +4,38 @@ const obj = {
   comp: 4
 }
 
-//O O
-for (let item in obj){
-  console.log(item)
-}
-
 //Calculate the sum of all score
-
-<<<<<<< HEAD
-// // PURE:
-// // 1. Same output for same input 
-// // 2. this function depends on input parameters
-// // 3. Only uses its own scopes
-// // 4. Testing/Debugging is easier
-// // should have return
+let sum = 0;
+for (let item in obj) {
+  sum += obj[item];
+}
+console.log('Sum is ',sum)
 
 
-// // IMPURE:
-// // 1. side efffect, modifies state: modifies variaibles in other/global scope
-// // 2. Depends on external factors/resources
-// // // loop over an array and save each item to database
+// using for of output the highest marks scorer
+const arr =[{ram:40},{gopal:50},{hari:60}];
+let highestScorer = "";
+let highestMarks = 0;
 
-// function functionincrement(count) {
-//   count += 1; 
-//     console.log(count)
-// }
+for (let student of arr) {
+const [name, marks] = Object.entries(student)[0]; 
+if (marks > highestMarks) {
+    highestMarks = marks;
+    highestScorer = name;
+}
+}
+console.log("Highest scorer:", highestScorer); 
+// using for in  output the highest marks scorer
+let hScore='';
+let hMarks=0;
+for (const index in arr) {
+const student = arr[index];
+const name = Object.keys(student)[0];
+const marks = student[name];        
+if (marks > hMarks) {
+    hMarks = marks;
+    hScore = name;
+}
+}
+console.log(hScore); 
 
-// functionincrement(0)
-
-// // MAP --> array 
-// //FILTER --> array 
-
-// //REDUCE
-// 1. can return a single value, [], {}
-// 2. combine, transform as well as aggregate
-// 3. accumulator ---> a storable value in  each iteration
-// 4. 
-
-
-const cart = [
-    {id: 3, item: 'hawkins cooker', quantity: 3, price: 1000},
-    {id: 4, item: 'baltra cooker', quantity: 2, price: 4000},
-]
-
-// let sum = 0
-// cart.forEach((item)=>{
-//     sum = sum + item.price
-// })
-// console.log(sum)
-
-//expected output: 11000
-const totalCost = cart.reduce((acc,{quantity,price}) => {
-    return acc+ (quantity * price);
-}, 0);
-console.log(totalCost); // 11000
-
-
-=======
-const arr =[{ram:40},{gopal:50},{hari:60}]
->>>>>>> b87f262e6de2a5fdc3848a33237b105493802827
-
-// using for of/for in output the highest marks scorer
-//expected ouput:
-//hari

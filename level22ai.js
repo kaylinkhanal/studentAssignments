@@ -1,13 +1,4 @@
 const sentence = "the quick brown fox jumps over the lazy dog";
-<<<<<<< HEAD
-=======
-const splittedSentence = sentence.split(' ')
-let tempMap = {}
-splittedSentence.forEach((item)=>{
-    tempMap[item] =  tempMap[item] ?  ++tempMap[item] : 1
-})
-
->>>>>>> d1aa61cb1656516302a136e89076af313da6f736
 // Expected output:
 // {
 //   the: 2,
@@ -19,7 +10,6 @@ splittedSentence.forEach((item)=>{
 //   lazy: 1,
 //   dog: 1
 // }
-<<<<<<< HEAD
 const checkword = (sentence) => {
 const words = sentence.split(" ");
 const wordCount = {};
@@ -50,19 +40,6 @@ const obj={
     domain:str[1]
 }
 console.log(obj)
-=======
-//hint 1 : get something like: 
-// ['the', 'quick' ,'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog];
-//hint 2: loop the array
-
-const phoneNumber = "123-456-7890";
-const [areaCode, prefix, lineNumber] = phoneNumber.split('-')
-console.log(`(${areaCode}) ${prefix}-${lineNumber}`)
-// Expected output:
-// "(123) 456-7890"
-
-const email = "test.user@example.com";
->>>>>>> d1aa61cb1656516302a136e89076af313da6f736
 // Expected output:
 // {
 //   username: "test.user",
