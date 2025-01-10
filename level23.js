@@ -41,9 +41,10 @@ const cart = [
 
 //expected output is 11000
 
-const output = cart.reduce((accumulator, currentItem, nextIndex) => {
-    return accumulator + (cart[nextIndex].quantity * cart[nextIndex].price)
-    
+const output = cart.reduce((accumulator, currentItem, currentIndex) => {
+    debugger;
+    return accumulator + (cart[currentIndex].quantity * cart[currentIndex].price)
+    debugger;
 }, 0)
 
 console.log(output)

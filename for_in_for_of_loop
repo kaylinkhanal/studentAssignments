@@ -1,0 +1,22 @@
+x = {
+    a:1,
+    b:2
+}
+//properties
+for (i in x){   //only loop for object
+    console.log(i)
+}
+
+y=[1,2]
+//value
+for (i of y){
+    console.log(i)
+}
+//index
+for (i in y){
+    console.log(i)
+}
+
+// y.forEach((item,id) => {
+//     console.log(item,id)
+// });
