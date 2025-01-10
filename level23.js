@@ -54,9 +54,9 @@ const obj = {
 };
 let sum = 0;
 for (let item in obj) {
-  console.log(item);
+  sum += obj[item];
 }
-
+console.log(sum);
 //Calculate the sum of all score
 
 const arr = [{ ram: 40 }, { gopal: 50 }, { hari: 60 }];
@@ -64,3 +64,13 @@ const arr = [{ ram: 40 }, { gopal: 50 }, { hari: 60 }];
 // using for of/for in output the highest marks scorer
 //expected ouput:
 //hari
+highest = 0;
+
+for (let item in arr) {
+  for (let name in arr[item]) {
+    if (highest <= arr[item][name]) {
+      highest = arr[item][name];
+    }
+  }
+}
+console.log(highest);
