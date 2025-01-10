@@ -58,9 +58,10 @@ const cart = [
 //   {id: 4, item: 'baltra cooker', quantity: 2, price: 4000},
 // ];
 
-const total = cart.reduce((sum, item) => {
-  sum=sum + item.price * item.quantity
-     return sum  }, 0);
-console.log(total); 
+// const total = cart.reduce((sum, item) => {
+//   sum= sum+item.price * item.quantity
+//      return sum  }, 0);
+// console.log(total); 
+
 
 
