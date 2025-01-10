@@ -28,7 +28,6 @@
 // 3. accumulator ---> a storable value in  each iteration
 // 4.
 
-
 // Using in cart in ecommerce
 const cart = [
   { id: 3, item: "hawkins cooker", quantity: 3, price: 1000 },
@@ -47,3 +46,17 @@ const cartAmount = cart.reduce((acc, item) => {
 }, 0);
 
 console.log(cartAmount);
+
+// For in loop vs for of loop
+
+const array1 = ['a', 'b', 'c'];
+
+for (const element of array1) {
+  console.log(element);
+}
+
+const object = { a: 1, b: 2, c: 3 };
+
+for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
