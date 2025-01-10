@@ -54,15 +54,24 @@
 
 
 // 1. Calculate the total quantity of items in the cart
-const cart = [
-    {id: 1, item: 'notebook', quantity: 5, price: 50},
-    {id: 2, item: 'pen', quantity: 10, price: 10},
-    {id: 3, item: 'eraser', quantity: 3, price: 5},
-];
+// const cart = [
+//     {id: 1, item: 'notebook', quantity: 5, price: 50},
+//     {id: 2, item: 'pen', quantity: 10, price: 10},
+//     {id: 3, item: 'eraser', quantity: 3, price: 5},
+// ];
 // Expected output: 18
 
-const totalQuantity = cart.reduce((curVal, totalQty) => {
-    curVal = curVal + totalQty.quantity;
-    return curVal;
-} ,0);
-console.log(totalQuantity);
+// const totalQuantity = cart.reduce((curVal, totalQty) => {
+//     curVal = curVal + totalQty.quantity;
+//     return curVal;
+// } ,0);
+// console.log(totalQuantity);
+
+// for in loop for objects
+let obj = {
+    a : 2,
+    b: 3
+}
+// for (const key in obj) {
+//     console.log(obj[key])
+// }
