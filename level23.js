@@ -44,16 +44,18 @@ const cart = [
 // console.log(sum)
 
 //expected output: 11000
- const output  =cart.reduce((sum, nextItem,nextId)=>{
-   sum = sum + nextItem
-   return sum
-},0)
+//  const output  =cart.reduce((sum, nextItem,nextId)=>{
+//    sum = sum + nextItem;
+//    return sum
+// },0); 
+// console.log(output)
 
-
-console.log(output)
 const newoutput= cart.reduce((id,item )=>{
 return id +item.quantity*item.price;
 },0);
-console.log(newoutput)
+console.log(newoutput);
+
+
+
 
 
