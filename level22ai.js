@@ -1,4 +1,9 @@
 const sentence = "the quick brown fox jumps over the lazy dog";
+const splittedSentence = sentence.split(' ')
+let tempMap = {}
+splittedSentence.forEach((item)=>{
+    tempMap[item] =  tempMap[item] ?  ++tempMap[item] : 1
+})
 
 // Expected output:
 // {
@@ -31,8 +36,6 @@ const phoneNumber = "123-456-7890";
 const phone = `(${phoneNumber.split("-")[0]}) ${phoneNumber.split("-").slice(1).join("-")}`
 console.log(phone)
 
-
-
 const email = "test.user@example.com";
 
 
@@ -64,6 +67,7 @@ console.log(filtered)
 
 
 const mixedCase = "HeLlO wOrLd";
+console.log(mixedCase.toLowerCase())
 
 // Expected output:
 // "hello world" (all lowercase)
