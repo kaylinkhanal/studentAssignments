@@ -1,5 +1,17 @@
-// // PURE VS IMPURE FUNCTION IN JAVASCRIPT
+const obj = {
+  math: 3,
+  science:5,
+  comp: 4
+}
 
+//O O
+let sum = 0;
+for (let item in obj){
+ sum +=obj[item]
+}
+console.log(sum)
+
+//Calculate the sum of all score
 
 
 // // PURE:
@@ -55,4 +67,37 @@ const  output =cart.reduce((accumulator, item)=>{
 
 console.log(output)
 
+const arr =[{ram:40},{gopal:50},{hari:60}]
 
+// using for of/for in output the highest marks scorer
+//expected ouput:
+//hari
+let highestMarks = 0;
+let highestMarksName = ''
+for(let item of arr){
+  for(let key in item){
+    if(item[key] > highestMarks){
+      highestMarks = item[key]
+      highestMarksName = key
+    }
+  }
+}
+console.log(highestMarksName)
+
+for(let item of arr){
+  console.log(item)
+  const {name, marks} = item
+
+  if(marks > highestMarks){
+    highestMarks = marks
+    highestMarksName = name
+  }
+}
+console.log(highestMarksName)
+for(let item in arr){
+  const {name, marks} = arr[item]
+  if(marks > highestMarks){
+    highestMarks = marks
+    highestMarksName = name
+  }
+}
