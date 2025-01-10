@@ -1,5 +1,3 @@
-// // PURE VS IMPURE FUNCTION IN JAVASCRIPT
-
 // // PURE:
 // // 1. Same output for same input
 // // 2. this function depends on input parameters
@@ -47,3 +45,22 @@ console.log(output);
 // console.log(sum)
 
 //expected output: 11000
+//O O
+
+const obj = {
+  math: 3,
+  science: 5,
+  comp: 4,
+};
+let sum = 0;
+for (let item in obj) {
+  console.log(item);
+}
+
+//Calculate the sum of all score
+
+const arr = [{ ram: 40 }, { gopal: 50 }, { hari: 60 }];
+
+// using for of/for in output the highest marks scorer
+//expected ouput:
+//hari
