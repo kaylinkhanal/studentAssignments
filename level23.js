@@ -37,3 +37,4 @@ for (const studentObj of arr) {
 }
 
 console.log(highestScorer); // Output: hari
+
