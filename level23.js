@@ -75,10 +75,9 @@ for(let item in obj){
   sum += obj[item]
 }
 console.log(sum)
+
+
 const arr =[{ram:40},{gopal:50},{hari:60}]
-  
-  
-  
   // using for of/for in output the highest marks scorer
   //expected ouput:
   //hari
