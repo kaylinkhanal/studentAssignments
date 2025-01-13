@@ -23,3 +23,17 @@ const arr =[{ram:40},{gopal:50},{hari:60}]
 // using for of/for in output the highest marks scorer
 //expected ouput:
 //hari
+
+let highestScore = 0;
+let highestScorer = "";
+
+for (const studentObj of arr) {
+  debugger;
+  const [studentName, score] = Object.entries(studentObj); // Destructuring
+  if (score > highestScore) {
+    highestScore = score;
+    highestScorer = studentName;
+  }
+}
+
+console.log(highestScorer); // Output: hari
