@@ -1,4 +1,9 @@
 const sentence = "the quick brown fox jumps over the lazy dog";
+const splittedSentence = sentence.split(' ')
+let tempMap = {}
+splittedSentence.forEach((item)=>{
+    tempMap[item] =  tempMap[item] ?  ++tempMap[item] : 1
+})
 
 // Expected output:
 // {
@@ -25,7 +30,8 @@ console.log(wordCount);
 
 
 const phoneNumber = "123-456-7890";
-
+const [areaCode, prefix, lineNumber] = phoneNumber.split('-')
+console.log(`(${areaCode}) ${prefix}-${lineNumber}`)
 // Expected output:
 // "(123) 456-7890"
 const number = phoneNumber.split("-");//split le phoneNumber lai - ma split garxa
@@ -36,7 +42,6 @@ console.log(result);
 
 
 const email = "test.user@example.com";
-
 // Expected output:
 // {
 //   username: "test.user",
@@ -62,6 +67,7 @@ console.log(aWords);
 
 
 const mixedCase = "HeLlO wOrLd";
+console.log(mixedCase.toLowerCase())
 
 // Expected output:
 // "hello world" (all lowercase)
@@ -82,7 +88,7 @@ console.log(wordsCount);
 
 
 const phrase = "racecar";
-
+console.log(phrase.split('').reverse().join('') === phrase)
 // Expected output:
 // true (check if the string is a palindrome)
 const reversePhrase = phrase.split("").reverse().join("");//phrase lai split garera reverse garera join garne
