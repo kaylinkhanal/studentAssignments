@@ -21,20 +21,11 @@ splittedSentence.forEach((item)=>{
 //hint 2: loop the array
 
 const phoneNumber = "123-456-7890";
-<<<<<<< HEAD
-const phoneNumber1 = phoneNumber.split('-')
-console.log(phoneNumber1)
-// Expected output:
-// "(123) 456-7890"
-
-
-=======
 const [areaCode, prefix, lineNumber] = phoneNumber.split('-')
 console.log(`(${areaCode}) ${prefix}-${lineNumber}`)
 // Expected output:
 // "(123) 456-7890"
 
->>>>>>> d1aa61cb1656516302a136e89076af313da6f736
 const email = "test.user@example.com";
 // Expected output:
 // {
