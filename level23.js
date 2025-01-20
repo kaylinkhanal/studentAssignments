@@ -57,7 +57,7 @@ const obj = {
     comp: 4
   }
 
-  //Calculate the sum of all score
+  // Q1. Calculate the sum of all score
   //O O
   let totalSum = 0;
   for (let item in obj){
@@ -70,7 +70,22 @@ const obj = {
 
 const arr =[{ram:40},{gopal:50},{hari:60}]
 
-// using for of/for in output the highest marks scorer
+//Q2. using for of/for in output the highest marks scorer
 //expected ouput:
 //hari
+
+let highestScore = "";
+let highestScorer = 0;
+for(const obj of arr ){
+    for (const name in obj){
+        if (obj[name] > highestScore)
+       {
+        highestScore = obj[name];
+        highestScorer = name;
+       }
+
+    }
+}
+console.log(highestScorer)
+
 
