@@ -68,11 +68,13 @@ const arr = [{ ram: 40 }, { gopal: 50 }, { hari: 60 }];
 //expected ouput:
 
 //hari
+let totalScore = 0;
 
 for (let student of arr) {
-  // console.log(name);
-  // let lowMarks=0;
-  for (let name in student) {
-    console.log(name);
+  const [score] = Object.entries(student);
+  // let();
+  if (score > totalScore) {
+    console.log(score);
   }
+  // console.log(student);
 }
