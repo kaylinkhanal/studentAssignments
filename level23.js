@@ -88,8 +88,14 @@ const arr =[{
     hari:60
 
 }]
+let highestMarks='';
+
 
 for(let num of arr){
+    for(let obj in num){
+        
+       
+    }
     
 }
 
