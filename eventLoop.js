@@ -1,11 +1,11 @@
 function child() {
-    debugger
-    return 10;
+  debugger;
+  return 10;
 }
 
 function parent() {
-    debugger;
-    return child() + 30;
+  debugger;
+  return child() + 30;
 }
 
 debugger;
