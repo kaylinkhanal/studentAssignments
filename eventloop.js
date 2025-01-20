@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-debugger;
-function child(){
-    debugger;
-    return 10;
-
-}
-
-function parent(){
-    debugger;
-    return child() + 30;
-}
-debugger;
-parent();
-debugger;
-
-//closures:
-=======
 let a = 10 //global
 debugger;
 function parent(){
@@ -47,4 +29,3 @@ parent()
 
 
 
->>>>>>> 4aca03cd82c641328a1ebc2c68ae1c020384a486
