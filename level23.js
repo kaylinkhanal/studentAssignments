@@ -28,10 +28,10 @@
 // 3. accumulator ---> a storable value in  each iteration
 // 4.
 
-// const cart = [
-//   { id: 3, item: "hawkins cooker", quantity: 3, price: 1000 },
-//   { id: 4, item: "baltra cooker", quantity: 2, price: 4000 },
-// ];
+const cart = [
+  { id: 3, item: "hawkins cooker", quantity: 3, price: 1000 },
+  { id: 4, item: "baltra cooker", quantity: 2, price: 4000 },
+];
 
 // let sum = 0
 // cart.forEach((item)=>{
@@ -40,41 +40,9 @@
 // console.log(sum)
 
 //expected output: 11000
-// const output = cart.reduce((sum, nextItem, nextId) => {
-//   sum = sum + nextItem;
-//   return sum;
-// }, 0);
+const output = cart.reduce((sum, nextItem, nextId) => {
+  sum = sum + nextItem;
+  return sum;
+}, 0);
 
-// console.log(output);
-
-// const obj = {
-//   math: 3,
-//   science: 5,
-//   comp: 4,
-// };
-
-//O O
-// let sum = 0;
-// for (let item in obj) {
-//   sum = sum + obj[item];
-// }
-// console.log(sum);
-
-//Calculate the sum of all score
-
-const arr = [{ ram: 40 }, { gopal: 50 }, { hari: 60 }];
-
-// using for of/for in output the highest marks scorer
-//expected ouput:
-
-//hari
-let totalScore = 0;
-
-for (let student of arr) {
-  const [score] = Object.entries(student);
-  // let();
-  if (score > totalScore) {
-    console.log(score);
-  }
-  // console.log(student);
-}
+console.log(output);
