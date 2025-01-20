@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <div className="min-h-screen flex ">
 
-          <div className="mx-auto flex items-center justify-center w-full  ">
-            <form className="p-10 space-y-5 ">
+          <div className=" mx-auto flex items-center justify-center w-full  ">
+            <form className="border-2 shadow-2xl rounded-2xl p-8 space-y-5 ">
               <h1 className="text-3xl font-bold">LogIn</h1>
                
               <div className="flex gap-4 items-center font-bold justify-between">
@@ -17,7 +17,7 @@ export default function Home() {
                 <input type="password" name="password" placeholder="Enter your Password" id="pass" className="border rounded-md py-2 px-3"/>
               </div>
 
-              <button className=" py-1 px-9 rounded-xl bg-green-600 text-white cursor:pointer hover:bg-yellow-400 ">submit</button>
+              <button className="py-1 px-9 rounded-xl bg-green-600 text-white cursor:pointer hover:bg-yellow-400 ">submit</button>
                
             </form>
           </div>
