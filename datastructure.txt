@@ -1,0 +1,20 @@
+HW: Research
+
+behind the scene, how does the code work/execute in js?
+ - https://dev.to/rajatoberoi/understanding-the-event-loop-callback-queue-and-call-stack-in-javascript-1k7c
+
+: callstack
+ - https://chatgpt.com/share/67834d51-13d0-800e-8a57-e9b898a5996e
+ - how it handles synchronous and asynchronous functions
+: callback queue
+
+
+microtask queue (has higher priority)
+macrotask queue/event queue/callback queue (has lower priority)
+EVENT LOOP
+
+async/await/promise
+
+
+main function / Global Execution Context (pushes in callstack first)
+

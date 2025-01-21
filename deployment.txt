@@ -1,0 +1,11 @@
+frontend:
+vercel
+
+backend: (problem: paisa lagxa most ma)
+render (free to some extent)
+
+
+cloudfare (maybe)
+netlify
+
+prabhu host (nepal)
