@@ -25,6 +25,16 @@ console.log(sum)
 // Q2
 const arr =[{ram:40},{gopal:50},{hari:60}]
 
+const output = arr.reduce((highScorer, nextItem, nextId)=>{
+  const [name, scores] =  Object.entries(nextItem)[0]
+  if(scores> highScorer[0]){
+    highScorer[0]= scores
+    highScorer[1] = name
+  }
+return highScorer
+},[0,''])
+
+console.log(output)
 // using for of/for in output the highest marks scorer
 //expected ouput:
 //hari
@@ -65,16 +75,16 @@ console.log(highest_scorer)
 
 //Alternative: reduce loop
 
-const output = arr.reduce((highScorer, currentItem) => {
-    let [names, scores] = Object.entries(currentItem)[0]
-    if (scores > highScorer[0]){
-        highScorer[0] = scores
-        highScorer[1] = names
-    }
-    return highScorer;
-}, [0, '']);
+// const output = arr.reduce((highScorer, currentItem) => {
+//     let [names, scores] = Object.entries(currentItem)[0]
+//     if (scores > highScorer[0]){
+//         highScorer[0] = scores
+//         highScorer[1] = names
+//     }
+//     return highScorer;
+// }, [0, '']);
 
-console.log(output[1])
+// console.log(output[1])
 
 
 //using for loop, you have to solve problem within th same block of code
