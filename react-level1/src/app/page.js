@@ -9,11 +9,11 @@ export default function Home() {
               <h1 className="text-3xl font-bold">LogIn</h1>
                
               <div className="flex gap-4 items-center font-bold justify-between">
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input type="email" name="email"placeholder="Enter your Email" id="email" className="border rounded-md py-2 px-3"/>
               </div>
               <div className="flex gap-4 items-center font-bold justify-between">
-                <label for="pass">Password</label>
+                <label htmlFor="pass">Password</label>
                 <input type="password" name="password" placeholder="Enter your Password" id="pass" className="border rounded-md py-2 px-3"/>
               </div>
 
