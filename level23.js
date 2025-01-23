@@ -101,6 +101,14 @@
 //     highestMarksName = name
 //   }
 // }
+let sum = 0
+//O O
+for (let item in obj){
+  sum = sum  + obj[item]
+  //do code changes
+}
+console.log(sum)
+//Calculate the sum of all score
 
 const arr =[{ram:40},{gopal:50},{hari:60}]
 let highestMarks = 0;
