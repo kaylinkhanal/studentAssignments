@@ -1,52 +1,9 @@
 
-<<<<<<< HEAD
-// console.log(arr);
-
-
-// calculate sum of odd number
-// const arr = [3,5,6,1]
-// let sum = 0
-// arr.forEach((item)=>{
-//     if(item%2===1){
-//         sum= sum + item
-//     }else{
-        
-//     }
-    
-// })
-// console.log(sum)
-
-// const arr=[3,5,6,1,'ram',false]
-// let sum =0;
-// const output=arr.map((item))=>{
-//     sum=sum+item;
-// }
-
-
-//Q1 calculate the sum of numbers
-
-// const arr=[3,5,6,1,'ram',false]
-// let sum =0;
-// const output=arr.filter((item)=>{
-//     sum=sum+item;
-// })
-// console.log(sum);
-
-// //Q2
-// const arr = [3,5,6,1, 'ram' ,false]
-
-// let sum = 0
-// const output = arr.map((item)=>{
-//     //sum = sum + item
-// })
-// console.log(sum)
-=======
 let sum = 0
 const output = arr.forEach((item)=>{
     sum = sum + (parseInt(item) || 0)
 })
 console.log(sum)
->>>>>>> 21577654e34a7344ff870a450fdafd1a42136b1a
 
 //q1. calulate the sum of Numbers
 const arr = [3, 5, 6, 1, 'ram', false];
@@ -61,33 +18,17 @@ arr.forEach((item) => {
 console.log(sum); 
 
 //q2. filter out non integers : expected output : [3,5,6,1]
-<<<<<<< HEAD
-const drr = [3, 5, 6, 1, 'ram', false];
-
-const integers = drr.filter(item => Number.isInteger(item));
-
-console.log(integers); 
-
-=======
 const filtered = arr.filter((item)=>{
    return parseInt(item)
 })
 console.log(filtered)
->>>>>>> 21577654e34a7344ff870a450fdafd1a42136b1a
 //q3. in the filtered result, multiply each number by 5 using .map
 const mapped = filtered.map((item)=>{
     return item * 5
 })
 
-<<<<<<< HEAD
-const mapped=integers.map((item)=>{
-    return item*5;
-})
-console.log(integers);
-=======
 console.log(mapped)
 
->>>>>>> 21577654e34a7344ff870a450fdafd1a42136b1a
 
 // MAP                   vs                   FOREACH
 // -> returns new array                    -> doesn't return new array, but can modify existing array

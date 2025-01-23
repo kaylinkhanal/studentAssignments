@@ -1,22 +1,22 @@
-debugger;
-function child(){
-    debugger;
-    return 40;
-}
-function parent(){
-    debugger;
-    return child()+50;
-}
-debugger;
-parent()
-debugger;
+[3,4,5,6,7]
 
 
+EVENT LOOP
+-> code execution, executing queued subtasks
+:callstack: 
+LIFO 
+   functions:
+   function second(){
+     console.log("hello world")
+    }
+   function first(){
+    console.log("hello world")
+   } 
+   first()
+   second()
 
-//closures in js
 
-//js
-//freecodecamp,codewars,leetcode,sololearn
-
-//DSA
-//educative.io
+:callback queue 
+ FIFO
+ ->   first() is enqueued
+ ->   second() is enqueued
