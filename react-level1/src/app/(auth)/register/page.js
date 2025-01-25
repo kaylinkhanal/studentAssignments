@@ -38,16 +38,8 @@ const Register = () => {
                 id="password"
               />
             </div>
-            <div className="mb-1 mt-2 pb-2 text-right">
-              <a
-                href="#"
-                className="font-semibold text-purple-600 hover:text-red-600"
-              >
-                forget password
-              </a>
-            </div>
             <button className="ease mt-5 w-full rounded-md bg-purple-600 p-3 text-lg font-semibold text-white shadow-2xl transition duration-1000 hover:bg-purple-800">
-              Login
+              Register
             </button>
           </form>
         </div>
