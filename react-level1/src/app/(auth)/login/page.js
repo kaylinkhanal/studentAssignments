@@ -1,59 +1,32 @@
-import React from 'react'
+import HeroSection from "@/components/hero-section";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import Link from "next/link";
+import React from "react";
 
-const login = () => {
-    return (
-        <div className="flex h-screen">
-          
-          <div className="w-1/2 bg-green-500 flex items-center justify-center">
-            <div className="max-w-sm w-full">
-              
-              <h1 className="text-3xl font-bold mb-6">Login</h1>
-              <form>
-               
-                <div className="mb-4">
-                  <label htmlFor="email" className="block text-gray-700 font-medium">
-                    Email:
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="Enter your email"
-                    className="w-full mt-1 px-3 py-2 border rounded-md text-black shadow-sm focus:outline-none focus:ring focus:ring-green-300"
-                  />
-                </div>
-    
-              
-                <div className="mb-6">
-                  <label
-                    htmlFor="password"
-                    className="block text-gray-700 font-medium"
-                  >
-                    Password:
-                  </label>
-                  <input
-                    type="password"
-                    id="password"
-                    placeholder="Enter your Password"
-                    className="w-full mt-1 px-3 py-2 border rounded-md text-black shadow-sm focus:outline-none focus:ring focus:ring-green-300"
-                  />
-                </div>
-    
-                {/* Submit Button */}
-                <button
-                  type="submit"
-                  className="w-full bg-green-500 text-white py-2 rounded-md hover:bg-green-600 focus:outline-none focus:ring focus:ring-green-300"
-                >
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
-    
-         
-          <div className="w-1/2 bg-blue-500"></div>
-        </div>
-      );
-    }
-    
+const Login = () => {
+  return (
+    <div className="flex w-[60%] flex-col gap-3">
+      <HeroSection/>
 
-export default login
+      <Input placeholder="Enter your Email" />
+      <Input type="password" placeholder="Enter your password" />
+
+      <Button
+        className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden rounded-lg group
+        bg-gradient-to-r from-[#FF7F50] via-[#FFE4B5] to-[#87CEEB]
+        text-white font-medium text-sm
+        transition-all duration-300 ease-out
+        hover:scale-[1.02] active:scale-[0.98]
+        shadow-lg hover:shadow-xl
+        hover:from-[#FF6B3D] hover:via-[#FFD700] hover:to-[#00BFFF]  text-black"
+      >
+        Login
+      </Button>
+      <p className="text-gray-500 text-sm">Don't have an account yet? 
+        <Link href="/register">Sign up</Link>instead</p>
+    </div>
+  );
+};
+
+export default Login;
