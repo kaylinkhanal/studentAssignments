@@ -1,4 +1,5 @@
 "use client";
+import HeaderTitle from "@/components/headerTitle";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useFormik } from "formik";
@@ -17,18 +18,22 @@ const Register = () => {
     validationSchema: yup.object({
       fullName: yup
         .string()
-        .matches(/^[A-Za-z]+$/, 'Username must contain only letters (no numbers or special characters)')
+        .matches(
+          /^[A-Za-z]+$/,
+          "Username must contain only letters (no numbers or special characters)"
+        )
         .max(25, "Must be 15 characters or less")
         .min(3, "Must be 3 characters or more")
         .required("Required"),
       email: yup.string().email("Invalid email address").required("Required"),
-      password: yup.string()
-      .min(8, 'Must contain 8 or more character')
-      .matches(/[a-z]/, 'Must contain one lowerCase letter')
-      .matches(/[A-Z]/, 'Must contain one UpperCase letter')
-      .matches(/\d/, 'Must contain one Number')
-      .matches(/[!@#$%^&*()]/, 'Must contain one Special character')
-      .required('Required')
+      password: yup
+        .string()
+        .min(8, "Must contain 8 or more character")
+        .matches(/[a-z]/, "Must contain one lowerCase letter")
+        .matches(/[A-Z]/, "Must contain one UpperCase letter")
+        .matches(/\d/, "Must contain one Number")
+        .matches(/[!@#$%^&*()]/, "Must contain one Special character")
+        .required("Required"),
     }),
     onSubmit: (values) => {
       console.log(values);
@@ -39,7 +44,7 @@ const Register = () => {
     <div className="grid grid-cols-2 gap-6 justify-center items-stretch ">
       <div className="flex flex-col border-l-4 ml-5 pl-20 my-8 rounded-2xl border-gray-800">
         <div>
-          <h1 className="font-extrabold text-6xl">Sign Up</h1>
+          <HeaderTitle title="Sign Up"/>
         </div>
         <div className="mt-5 font-thin text-gray-700">
           Already have an account ?{" "}
@@ -128,6 +133,7 @@ const Register = () => {
         </div>
       </div>
     </div>
+
   );
 };
 

@@ -1,4 +1,5 @@
 "use client"
+import HeaderTitle from "@/components/headerTitle";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
@@ -11,7 +12,7 @@ const login = () => {
     <div className="flex justify-center items-center">
       <div className="flex flex-col  p-7 my-8 shadow-xl">
         <div>
-          <h1 className="font-extrabold text-6xl">Log In</h1>
+          <HeaderTitle title="Log In"/>
         </div>
         <div className="mt-5 font-thin text-gray-700">
           Create an account ? 
