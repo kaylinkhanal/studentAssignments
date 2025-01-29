@@ -1,11 +1,10 @@
-import { Checkbox } from "@/components/ui/checkbox";
 import React from "react";
-
-const layout = () => {
+//HOC
+const layout = ({ children }) => {
   return (
-    <div className="bg-red-500">
-      hello
-      <Checkbox />
+    <div className="bg-red-500 p-40">
+      <p>XYZ:</p>
+      {children}
     </div>
   );
 };
