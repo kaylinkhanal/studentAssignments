@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Image from "next/image";
 
 export default function Home() {
@@ -68,13 +67,4 @@ export default function Home() {
       </footer>
     </div>
   );
-=======
-export default function Main (){
-  //JSX -> Javascript XML
- return (
-  <div>
-    hi
-  </div>
- )
->>>>>>> b86dbb177fd5368529a0ea342c01e6477cacd1d4
 }
