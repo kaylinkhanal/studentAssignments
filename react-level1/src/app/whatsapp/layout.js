@@ -1,9 +1,15 @@
+import ChatUi from '@/components/chat-ui'
+import SideNav from '@/components/side-nav'
 import React from 'react'
 
-const Layout = ({children}) => {
+const layout = ({children}) => {
   return (
-    <div>{children}</div>
+    <div className='flex gap-3'>
+        <SideNav/>
+        {children}
+   
+        </div>
   )
 }
 
-export default Layout
+export default layout

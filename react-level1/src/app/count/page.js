@@ -27,3 +27,16 @@ const Count = () => {
 }
 
 export default Count
+
+
+
+
+
+// function giveMeChocolate(chocolate, price){
+
+// }
+
+
+// giveMeChocolate('kitkat',53)
+// giveMeChocolate('eclars',53)
+// giveMeChocolate('milkybar',42)
