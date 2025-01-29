@@ -1,14 +1,15 @@
+import Link from 'next/link'
 import React from 'react'
 
 const SideNav = () => {
-    const navItems= ['Chat', 'Status', 'Channel' , 'Communities']
+    const navItems= ['chat', 'status', 'channel' , 'communities']
   return (
     <div>
         {navItems.map((item)=> {
             return (
-                <div>
+                <Link href={'/whatsapp/'+item} >
                     {item}
-                </div>
+                </Link>
             )
         })}
     </div>

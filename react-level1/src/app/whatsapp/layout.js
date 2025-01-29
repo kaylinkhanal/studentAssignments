@@ -7,7 +7,7 @@ const layout = ({children}) => {
     <div>
         <SideNav/>
         {children}
-        <ChatUi/>
+   
         </div>
   )
 }
