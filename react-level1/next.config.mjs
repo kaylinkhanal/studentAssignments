@@ -18,6 +18,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "www.gap.com",
       },
+      {
+        protocol: "https",
+        hostname: "www.example.com",
+      },
     ],
   },
 };
