@@ -2,7 +2,7 @@ import React from 'react'
 
 const Channel = () => {
   return (
-    <div>Channel</div>
+    <div className='ml-[70px]'>Channel</div>
   )
 }
 

@@ -15,7 +15,7 @@ const ChatCard = ({ user, setCurrentUser, currentUser }) => {
     <div
       onClick={() => setCurrentUser(user)}
       className={`flex gap-4 items-center w-96 p-3 rounded-xl cursor-pointer 
-              transition-all hover:bg-gray-300 ml-[70px]
+              transition-all hover:bg-gray-300 ml-[70px] 
               ${currentUser?.id === user.id ? "bg-gray-300" : "bg-white"}`}
     >
       <div className="relative">

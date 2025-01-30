@@ -57,6 +57,7 @@ const ChatUi = ({currentUser}) => {
       </div>
     )}
   </div>
+  
   )
 }
 

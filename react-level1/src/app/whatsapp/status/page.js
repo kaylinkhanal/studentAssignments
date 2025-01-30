@@ -2,7 +2,7 @@ import React from 'react'
 
 const Status = () => {
   return (
-    <div>Status</div>
+    <div className='ml-[70px]'>Status</div>
   )
 }
 
