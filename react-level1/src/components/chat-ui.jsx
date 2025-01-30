@@ -1,8 +1,11 @@
 import React from 'react'
 
-const ChatUi = () => {
+const ChatUi = ({currentUserDetails}) => {
   return (
-    <div>ChatUi</div>
+    <div>{JSON.stringify(currentUserDetails)}
+    {currentUserDetails.username}
+    {currentUserDetails.lastSeen}
+    </div>
   )
 }
 

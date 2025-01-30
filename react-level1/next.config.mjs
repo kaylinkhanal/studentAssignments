@@ -4,7 +4,8 @@ const nextConfig = {
         domains: [
           "example.com",
           "www.theleathershop.com",
-          "m.media-amazon.com"
+          "m.media-amazon.com",
+          "images.pexels.com"
         ],
       },
 };
