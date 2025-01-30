@@ -1,4 +1,4 @@
-import ChatUi from '@/components/chat-ui'
+'use client'
 import UserCard from '@/components/user-card'
 import React from 'react'
 
