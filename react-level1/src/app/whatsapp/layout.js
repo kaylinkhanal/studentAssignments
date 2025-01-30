@@ -1,15 +1,12 @@
-import ChatUi from '@/components/chat-ui'
-import SideNav from '@/components/side-nav'
-import React from 'react'
+import SideNav from "@/components/side-nav";
 
-const layout = ({children}) => {
+export default function WhatsAppLayout({
+  children,
+}) {
   return (
-    <div>
-        <SideNav/>
-        {children}
-   
-        </div>
-  )
+    <div className="flex h-screen bg-[#0f1621]">
+      <SideNav />
+      <main className="flex-1">{children}</main>
+    </div>
+  );
 }
-
-export default layout
