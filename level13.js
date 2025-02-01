@@ -3,6 +3,10 @@ const name = 'ram thapa'
 //Q1. Expected output:
 // ['thapa','ram']
 console.log(name.split(' ').reverse())
+const reversedArray = name.split(' ').reverse();
+console.log(reversedArray);
+
+
 //Q2. Expected output
 //  {
 // 'ram': 'thapa'
@@ -13,6 +17,9 @@ const lastName = name.split(' ')[1]
 console.log({
    [firstName]: lastName
 })
+
+
+
 //Q3. expected output: 
 // {
     // username: 'Ram Thapa'
