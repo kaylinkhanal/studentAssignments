@@ -19,3 +19,10 @@ const subjects= {
 //     },
 //     subjects: [35,36]
 // }
+
+const {user,...rest}=details
+const {math, science, computer}=subjects
+console.log({
+    user,
+    subjects: [math, science]
+})
