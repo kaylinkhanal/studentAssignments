@@ -2,6 +2,7 @@
 import ChatCard from '@/components/user-card';
 import ChatUi from '@/components/chat-ui';
 import React, { useState } from 'react'
+import UserCardHeader from '@/components/header-user-card';
 
 const Chat = () => {
     const users = [
@@ -89,14 +90,19 @@ const Chat = () => {
 
     const [currentUser, setCurrentUser] = useState(null)
   return (
-    <div className='flex gap-5'>
-        <div>
+    <div className='flex gap-5 overflow-y-hidden h-screen'>
+      <div className='ml-[68px]'>
+          <div className='sticky top-0 z-10'>
+            <UserCardHeader />
+          </div>
+          <div className='overscroll-contain h-[calc(100vh-16px)] overflow-y-auto bg-white shadow rounded-xl p-2 scrollbar-none'>
             {users.map((item)=>{
                 return (
-                    <ChatCard user={item} key={item.id} setCurrentUser={setCurrentUser} currentUser={currentUser}/>
+                    <ChatCard user={item} key={item.id} setCurrentUser={setCurrentUser} currentUser={currentUser} />
                 )
             })}
         </div>
+      </div>
         <div>
             <ChatUi currentUser={currentUser}/>
         </div>
