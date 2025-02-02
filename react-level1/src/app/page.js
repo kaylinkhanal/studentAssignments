@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import Image from "next/image";
 
 // export default function Home() {
@@ -99,3 +100,13 @@
 //     </div>
 //   );
 // }
+=======
+export default function Main (){
+  //JSX -> Javascript XML
+ return (
+  <div>
+    hi
+  </div>
+ )
+}
+>>>>>>> 2041118162b773d4a1af526dcdca211a1f4f9617
