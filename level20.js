@@ -59,7 +59,6 @@ console.log(result)
 // ]
 
 const winner  = arr.filter((item)=>{
-<<<<<<< HEAD
     // return only if item.name[0] is r
     return item.name[0] === 'r'
     }).map((item)=>{
@@ -69,12 +68,3 @@ const winner  = arr.filter((item)=>{
     })
     
     console.log(winner)
-=======
-    return item.name[0] === 'r'
-}).map((item)=>{
-    item.winner = true 
-    return item
-})
-
-console.log(winner)
->>>>>>> 1657f0bb4081084a5f467dd7c529685208d0b662

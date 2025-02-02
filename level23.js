@@ -12,11 +12,11 @@ for (let item in obj){
 }
 console.log(sum)
 //Calculate the sum of all score
-let sum = 0
-for (let item in obj){
-  sum += obj[item]
-}
-console.log(sum)
+// let sum = 0
+// for (let item in obj){
+//   sum += obj[item]
+// }
+// console.log(sum)
 
 const arr =[{ram:40},{gopal:50},{hari:60}]
 
