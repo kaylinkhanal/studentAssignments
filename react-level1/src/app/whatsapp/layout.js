@@ -4,7 +4,7 @@ import React from 'react'
 
 const layout = ({children}) => {
   return (
-    <div className='flex gap-3'>
+    <div className='flex gap-4'>
         <SideNav/>
         {children}
    
