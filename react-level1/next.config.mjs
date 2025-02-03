@@ -6,6 +6,7 @@ const nextConfig = {
             "placeimg.com",
             "www.bbc.co.uk",
             "encrypted-tbn0.gstatic.com",
+            "upload.wikimedia.org",
         ]
     }
 };
