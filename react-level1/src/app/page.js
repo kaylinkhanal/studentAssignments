@@ -1,9 +1,8 @@
-import React from 'react'
-
-const page = () => {
-  return (
-    <div>page</div>
-  )
+export default function Main (){
+  //JSX -> Javascript XML
+ return (
+  <div>
+    hi
+  </div>
+ )
 }
-
-export default page
