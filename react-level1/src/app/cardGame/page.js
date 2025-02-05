@@ -97,15 +97,20 @@ const Cards = () => {
             <div className="text-lg font-semibold">Computer Score: {score.computer}</div>
           </div>
           <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-13 gap-2 mb-6">
-            {deck.map((card, index) => (
+            { deck.map((card, index) => (
+              
               <Button
                 key={index}
                 onClick={() => handleCardSelect(card)}
                 className={`h-24 text-lg font-bold ${selectedCard === card ? "bg-blue-500 text-white" : "bg-white"} hover:bg-blue-600 hover:text-white transition-colors duration-200 flex flex-col items-center justify-center`}
                 disabled={selectedCard !== null}
               >
-                <span className={suitColors[card.suit]}>{card.rank}</span>
-                <span className={`text-2xl ${suitColors[card.suit]}`}>{card.suit}</span>
+         {selectedCard === card && (
+  <div className="flex flex-col items-center justify-center">
+    <span className={suitColors[card.suit]}>{card.rank}</span>
+    <span className={`text-2xl ${suitColors[card.suit]}`}>{card.suit}</span>
+  </div>
+)}
               </Button>
             ))}
           </div>
