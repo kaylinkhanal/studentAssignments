@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-const UnClick = () => {
+const Memory = () => {
   const [selectedItems, setSelectedItems] = useState("");
 
   const grids = [
@@ -38,4 +38,4 @@ const UnClick = () => {
   );
 };
 
-export default UnClick;
+export default Memory;
