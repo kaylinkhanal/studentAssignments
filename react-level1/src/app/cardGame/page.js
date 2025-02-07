@@ -117,6 +117,7 @@ const Cards = () => {
           {selectedCard && computerSelection && (
             <div className="text-center">
               <p className="text-xl mb-2">
+                
                 You chose: <span className="font-bold">{selectedCard.rank}</span>
                 <span className={`ml-1 ${suitColors[selectedCard.suit]}`}>{selectedCard.suit}</span>
               </p>
