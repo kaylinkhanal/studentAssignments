@@ -1,14 +1,16 @@
-import Image from 'next/image'
+
+import HeroIcon from '@/components/hero-icon'
 import React from 'react'
+//HOC: HIgher order component
 
 const layout = ({children}) => {
+
   return (
-    <div className='bg-slate-200 p-40'>
-{/* <Image src='next.svg' width={50} height={50} alt='' /> */}
-      {children}
+    <div className=' p-40 border shadow-xl m-40'>
+        <HeroIcon width={100}/>
+        {children}
     </div>
   )
-  
 }
 
 export default layout

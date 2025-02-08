@@ -1,30 +1,10 @@
-export default function Home() {
-    return (
-        <div className="min-h-screen flex ">
-
-        <div className=" mx-auto flex items-center justify-center w-full  ">
-          <form className="border-2 shadow-2xl rounded-2xl p-8 space-y-5 ">
-            <h1 className="text-3xl font-bold">LogIn</h1>
-             
-            <div className="flex gap-4 items-center font-bold justify-between">
-              <label for="email">Email</label>
-              <input type="email" name="email"placeholder="Enter your Email" id="email" className="border rounded-md py-2 px-3"/>
-            </div>
-            <div className="flex gap-4 items-center font-bold justify-between">
-              <label for="pass">Password</label>
-              <input type="password" name="password" placeholder="Enter your Password" id="pass" className="border rounded-md py-2 px-3"/>
-            </div>
-        
-            <button className="py-1 px-9 rounded-xl bg-red-600 text-white cursor:pointer hover:bg-blue-400 ">submit</button>
-             
-          </form>
-        </div>
-        
-        <div className=" mx-auto flex text-center py-64 bg-green-500 w-full hover:bg-red-400 ">
-        <p className="text-black  text-7xl" >Everyone! Welcome To Login </p>
-        </div>
-        </div>
-    ) ;
+export default function Main (){
+  //JSX -> Javascript XML
+ return (
+  <div>
+    hi
+  </div>
+ )
 }
 
 
