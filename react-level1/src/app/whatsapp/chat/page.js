@@ -16,41 +16,34 @@ const Chat = () => {
         {
           "userId": "2",
           "username": "JaneSmith",
-          "profilePicture": "https://example.com/profile2.jpg",
+          "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE6-KsNGUoKgyIAATW1CNPeVSHhZzS_FN0Zg&s",
           "status": "offline",
           "lastSeen": "2024-10-26T18:30:00Z"
         },
         {
           "userId": "3",
           "username": "PeterJones",
-          "profilePicture": "https://example.com/profile3.jpg",
+          "profilePicture": "https://plus.unsplash.com/premium_photo-1689977871600-e755257fb5f8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "status": "online",
           "lastSeen": "2024-10-27T10:15:00Z"
         },
           {
           "userId": "4",
           "username": "AliceJohnson",
-          "profilePicture": "https://example.com/profile4.jpg",
+          "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLpGh_iVtnRdvFi61zAP5iC8OuwCvuEyK0l9rrbWvob5x0JNwgSSrMsWWFwrt6nT3fhKc&usqp=CAU",
           "status": "away", // Added "away" status
           "lastSeen": "2024-10-27T09:45:00Z"
         },
-          {
-          "userId": "5",
-          "username": "BobWilliams",
-          "profilePicture": "https://example.com/profile5.jpg",
-          "status": "offline",
-          "lastSeen": "2024-10-25T12:00:00Z"
-        }
+ 
       ]
   return (
-    <div className='flex'>
-        <div className=''>
+    <div className='grid grid-cols-12'>
+        <div className='col-span-3'>
             {users.map((item)=>{
-                return    <UserCard item={item} key={item.userId} setCurrentUserDetails={setCurrentUserDetails}/>
+                return    <UserCard item={item} key={item.userId} setCurrentUserDetails={setCurrentUserDetails} currentUserDetails={currentUserDetails}/>
             })}
-         
         </div>
-        <div className=''>
+        <div className='col-span-9'>
             <ChatUi currentUserDetails={currentUserDetails}/>
         </div>
     </div>
