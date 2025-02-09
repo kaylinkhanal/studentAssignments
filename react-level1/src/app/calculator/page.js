@@ -13,7 +13,8 @@ const Calculator = () => {
   const handleEqualsTo = () => {
     try {
       if (getBody) {
-        const numToBeConverted = getBody.join("");
+        let numToBeConverted = getBody.join("");
+        numToBeConverted = numToBeConverted.replace(/%/g, '/100')
         const calculation = eval(numToBeConverted);
         setGetBody([calculation.toString()]);
       }
@@ -33,66 +34,6 @@ const Calculator = () => {
   }
 
   return (
-    // <div className="w-screen h-screen bg-gradient-to-br from-gray-500 to-slate-800 flex flex-col justify-center items-center">
-    //   <div className="w-fit bg-gray-500 shadow-2xl rounded-2xl p-6">
-    //     <div className="h-16 w-full bg-gray-200 rounded-lg flex justify-end items-center px-4 text-4xl font-mono text-black">
-    //       {getBody}
-    //     </div>
-
-    //     <div className="grid grid-cols-4 gap-3 mt-5 w-fit mb-3">
-    //       <div onClick={()=> handleUndo()} className="cursor-pointer h-16 w-16 text-white rounded-lg shadow-md flex justify-center items-center text-xl bg-gray-600 font-extrabold">
-    //         <RotateCcw />
-    //       </div>
-    //       <div onClick={() => handleClick('%')} className="cursor-pointer h-16 w-16 text-white rounded-lg shadow-md flex justify-center items-center text-xl bg-gray-600 font-extrabold">
-    //         %
-    //       </div>
-    //       <div onClick={() => handleClick("/")} className="cursor-pointer h-16 w-16 text-white rounded-lg shadow-md flex justify-center items-center text-xl bg-gray-600 font-extrabold">
-    //         /
-    //       </div>
-    //       <div onClick={() => handleClick("*")} className="h-16 w-16 rounded-lg shadow-md flex justify-center items-center text-xl text-white bg-gray-600 font-extrabold">
-    //         *
-    //       </div>
-    //     </div>
-
-    //     <div className="grid grid-cols-4 w-fit gap-3">
-    //       <div className="col-span-3 grid grid-cols-3 gap-3">
-    //         {calBody.map((bodyItem, id) => {
-    //           return (
-    //             <div
-    //               onClick={() => handleClick(bodyItem)}
-    //               key={id}
-    //               className={`cursor-pointer h-16 w-16 text-white rounded-lg shadow-md flex justify-center items-center text-xl ${
-    //                 bodyItem === "C"
-    //                   ? "bg-red-700"
-    //                   : " bg-gray-600 font-extrabold"
-    //               }`}
-    //             >
-    //               {bodyItem}
-    //             </div>
-    //           );
-    //         })}
-    //         <button
-    //           onClick={() => deleteAll()}
-    //           className="h-16 w-16 rounded-lg shadow-md flex justify-center items-center text-xl text-white bg-red-500"
-    //         >
-    //           AC
-    //         </button>
-    //       </div>
-    //       <div className="flex flex-col gap-3">
-    //         <div onClick={() => handleClick('-')} className="h-16 w-16 rounded-lg shadow-md flex justify-center items-center text-xl text-white  bg-gray-600 font-extrabold">
-    //           -
-    //         </div>
-    //         <div onClick={() => handleClick('+')} className="h-16 w-16 rounded-lg shadow-md flex justify-center items-center text-xl text-white  bg-gray-600 font-extrabold">
-    //           +
-    //         </div>
-    //         <button onClick={() => handleEqualsTo()} className="flex-1 h-16 w-16 rounded-lg shadow-md flex justify-center items-center text-xl text-white bg-green-500">
-    //           =
-    //         </button>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-
 
     <div className="w-screen h-screen bg-gradient-to-br from-gray-900 to-slate-950 flex flex-col justify-center items-center">
     <div className="w-fit bg-gray-800 shadow-2xl rounded-2xl p-6 border border-gray-700">
