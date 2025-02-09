@@ -1,10 +1,50 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { CalculatorIcon } from "lucide-react";
+import React, { useState } from "react";
 
 const Calculator = () => {
-  const keys = [
+  // Keys for scientific and basic mode
+  const scientificKeys = [
+    "sin",
+    "cos",
+    "tan",
+    "rad",
+    "deg",
+    "log",
+    "ln",
+    "(",
+    ")",
+    "inv",
+    "!",
     "AC",
     "C",
+    "%",
+    "÷",
+    "^",
+    "7",
+    "8",
+    "9",
+    "×",
+    "√",
+    "4",
+    "5",
+    "6",
+    "-",
+    "π",
+    "1",
+    "2",
+    "3",
+    "+",
+    "e",
+    "00",
+    "0",
+    ".",
+    "=",
+  ];
+
+  const basicKeys = [
+    "AC",
+    'C',
     "%",
     "÷",
     "7",
@@ -24,53 +64,76 @@ const Calculator = () => {
     ".",
     "=",
   ];
+
   const [input, setInput] = useState("");
+  const [isScientificModelOpen, setIsScientificModelOpen] = useState(false);
   const [result, setResult] = useState("");
 
-    const handleClick = (key) => {
-      switch (key) {
-        case "AC":
-          setInput("");
-          setResult("");
-          break;
-        case "C":
-          setInput(input.slice(0, -1));
-          break;
-        case "=":
-          try {
-            // Replace × with * and ÷ with / for evaluation
-            const evalInput = input.replace(/×/g, "*").replace(/÷/g, "/");
-            const calculatedResult = eval(evalInput);
-            setResult(calculatedResult.toString());
-            setInput(calculatedResult.toString());
-          } catch (error) {
-            setResult("Error");
-          }
-          break;
-        case "×":
-        case "÷":
-        case "+":
-        case "-":
-        case "%":
-        case ".":
-          // Prevent consecutive operators
-          if (!"+-×÷%.".includes(input.slice(-1))) {
-            setInput((prev) => prev + key);
-          }
-          break;
-        default:
+  const handleModelOpen = () => {
+    setIsScientificModelOpen(!isScientificModelOpen);
+  };
+
+  const handleClick = (key) => {
+    switch (key) {
+      case "AC":
+        setInput("");
+        setResult("");
+        break;
+      case "C":
+        setInput(input.slice(0, -1));
+        break;
+
+      case "=":
+        try {
+          // Replace × with * and ÷ with / for evaluation
+          const evalInput = input.replace(/×/g, "*").replace(/÷/g, "/");
+          const calculatedResult = eval(evalInput);
+          setResult(calculatedResult.toString());
+        } catch (error) {
+          setResult("Error");
+        }
+        break;
+      case "×":
+      case "÷":
+      case "+":
+      case "-":
+      case "%":
+      case ".":
+        // Prevent consecutive operators
+        if (!"+-×÷%.".includes(input.slice(-1))) {
           setInput((prev) => prev + key);
-      }
-    };
-  
+        }
+        break;
+
+      default:
+        if(['sin'].includes(key)){
+          const changeValue = {
+            sin : 'Math.sin'
+          }
+          setInput((prev) => prev + changeValue[key] + "(");
+        }else{
+          setInput((prev) => prev + key);
+        }
+        
+        break;
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-xl w-80">
         {/* Calculator Header */}
-        <div className="p-4 border-b">
+        <div className="p-4 border-b flex items-center justify-between">
           <h1 className="text-2xl font-bold text-gray-800 text-center">
             Calculator
           </h1>
+          <button onClick={handleModelOpen}>
+            <CalculatorIcon
+              className={`${
+                isScientificModelOpen ? "text-green-700" : "text-blue-800"
+              }`}
+            />
+          </button>
         </div>
 
         {/* Display */}
@@ -85,29 +148,32 @@ const Calculator = () => {
           </div>
 
           {/* Keypad */}
-          <div className="grid grid-cols-4 gap-2">
-            {keys.map((key) => (
+          <div
+            className={`grid ${
+              isScientificModelOpen ? "grid-cols-5" : "grid-cols-4"
+            } gap-2`}
+          >
+            {(isScientificModelOpen ? scientificKeys : basicKeys).map((key) => (
               <button
                 key={key}
                 onClick={() => handleClick(key)}
                 className={`
-                                    p-4 text-xl font-semibold rounded-lg
-                                    ${
-                                      key === "AC" || key === "C"
-                                        ? "bg-red-500 text-white hover:bg-red-600"
-                                        : key === "+" ||
-                                          key === "-" ||
-                                          key === "×" ||
-                                          key === "÷" ||
-                                          key === "=" ||
-                                          key === "%"
-                                        ? "bg-blue-500 text-white hover:bg-blue-600"
-                                        : "bg-gray-200 hover:bg-gray-300"
-                                    }
-                                    transition-colors duration-200
-                                    active:transform active:scale-95
-                                    ${key === "0" ? "col-span-1" : ""}
-                                `}
+                  p-4 text-xl font-semibold rounded-lg
+                  ${
+                    key === "AC" || key === "C"
+                      ? "bg-red-500 text-white hover:bg-red-600"
+                      : key === "+" ||
+                        key === "-" ||
+                        key === "×" ||
+                        key === "÷" ||
+                        key === "=" ||
+                        key === "%"
+                      ? "bg-blue-500 text-white hover:bg-blue-600"
+                      : "bg-gray-200 hover:bg-gray-300"
+                  }
+                  transition-colors duration-200
+                  active:transform active:scale-95
+                `}
               >
                 {key}
               </button>
