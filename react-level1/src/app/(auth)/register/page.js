@@ -1,9 +1,20 @@
+import { Button } from '@/components/ui/button'
 import React from 'react'
 
-const register = () => {
+const Register = () => {
   return (
-    <div>Rgister page</div>
+    <div className='flex-col'>
+      <input/>
+      <input/>
+      <input/>
+      <input/>
+      <input/>
+      <input/>
+      <input/>
+      <input/>
+      <Button>okay</Button>
+    </div>
   )
 }
 
-export default register
+export default Register
