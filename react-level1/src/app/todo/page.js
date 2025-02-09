@@ -14,22 +14,18 @@ const TodoList = () => {
   const [assignedTo, setAssignedTo] = useState([teamMember[0]]);   //to track which member is assign initially
   const [date, setDate] = useState(new Date());
   const [todo, setTodo] = useState(()=> JSON.parse(localStorage.getItem('tasks')) || []); //get data from strorage 
-  // const [named, setNamed] = useState(()=>{
-  //   const tasks = JSON.parse(localStorage.getItem('tasks')) || []
-  //   const users = tasks.map((taskInfo)=> taskInfo.AssignedTo)
-  //   return users 
-  // });
+
 
   const handleAddTask = () => {
     if (input.current.value) {
-      const tasks = [...todo,{task: input.current.value, AssignedTo: assignedTo, deadline: date.toISOString()}]
+      const tasks = [...todo,{task: input.current.value, AssignedTo: assignedTo, deadline: date.toISOString()}] //convert date into string
       setTodo(tasks)
       localStorage.setItem('tasks', JSON.stringify(tasks))
       input.current.value = "";
     }
   };
   const selectedWhomToAssign = (event) => {
-    const userChanged = event.target.value
+    const userChanged = event.target.value  //tracking what is selected in dropdown
     setAssignedTo(userChanged)
   }
 
@@ -38,7 +34,7 @@ const TodoList = () => {
     localStorage.removeItem('tasks')
   };
 
-  const deleteSingle = (id) => {
+  const deleteSingle = (id) => { //deleteing single and updating localstorage
     const tasks = [...todo];
     tasks.splice(id, 1);
     setTodo(tasks);
@@ -47,8 +43,8 @@ const TodoList = () => {
 
   };
 
-  const taskListDropDown = (event, id)=>{
-    const changeUser = event.target.value 
+  const taskListDropDown = (event, id)=>{//in task displaying ui tracking user changed and
+    const changeUser = event.target.value //changing that AssignedTo to that change user
     const tasked = [...todo]
     tasked[id].AssignedTo = changeUser
     localStorage.setItem('tasks', JSON.stringify(tasked))
