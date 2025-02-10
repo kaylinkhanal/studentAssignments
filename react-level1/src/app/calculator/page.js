@@ -45,13 +45,14 @@ const Calculator = () => {
         const checkLength = calculation.toString().split('')
 
         let correctedLength = 0
-        if(checkLength.length > 12){ //fixing the decimal that are greater than length og 12
+        if(checkLength.length > 12){ //fixing the decimal that are greater than length of 12
           correctedLength = calculation.toFixed(10)
           
           setGetBody([correctedLength.toString()]);
+        }else{
+          setGetBody([calculation.toString()])
         }
 
-        setGetBody([calculation.toString()])
         
       }
     } catch (error) {
