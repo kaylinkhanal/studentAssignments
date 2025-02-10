@@ -7,7 +7,7 @@ const LocalStorage = () => {
     const [isDisplayed, setIsDisplayed] = useState(false)
 
     const click = ()=>{
-        const tasks = [...task, text.current.value]
+        const tasks = [...task, {todo:text.current.value}]
         setTask(tasks)
         text.current.value = ''
         localStorage.setItem('task', JSON.stringify(tasks))
@@ -30,7 +30,7 @@ const LocalStorage = () => {
         <div>
             {isDisplayed && task.map((tsk, id)=>(
                 <div key={id}>
-                    {tsk}
+                    {tsk.todo}
                 </div>
             ))}
         </div>

@@ -1,25 +1,62 @@
 "use client";
 import { RotateCcw } from "lucide-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Calculator = () => {
   const [getBody, setGetBody] = useState([]);
   const maxLength = 12
   const calBody = [9, 8, 7, 6, 5, 4, 3, 2, 1, ".", 0];
+  
+  const symbols = ['+', '-', '/' , '.' ,'%']
+
   const handleClick = (bodyItem) => {
+    if ((getBody.length > 0 && //checking if +, - ..are repating right after
+      symbols.some((symbol)=> symbol === getBody[getBody.length-1]) && 
+      bodyItem === getBody[getBody.length-1])) return
+    
+
+    if((getBody.length > 0) &&  //checking for / or % coming together and vice versa
+    (bodyItem === '%' || bodyItem ==='/' ) && 
+    (getBody[getBody.length - 1] === '/' || getBody[getBody.length - 1] ==='%')) return
+
+    if((getBody.length > 0) && //checking for / or * coming together and vice versa
+     (bodyItem === '/' || bodyItem === '*') && 
+     (getBody[getBody.length-1] === '*' || getBody[getBody.length-1] === '/')) return
+
     setGetBody([...getBody, bodyItem]);
   };
+
 
   const handleEqualsTo = () => {
     try {
       if (getBody) {
-        let numToBeConverted = getBody.join("");
-        numToBeConverted = numToBeConverted.replace(/%/g, '/100')
-        const calculation = eval(numToBeConverted);
-        setGetBody([calculation.toString()]);
+        // let numToBeConverted = getBody.join(""); //changing array into string
+        //changing % into /100
+        const correctedPercentage = getBody
+        correctedPercentage.forEach((item, id)=>{
+          if (item === '%'){
+            correctedPercentage[id] = '/100'
+          }
+        })
+
+        // numToBeConverted = numToBeConverted.replace(/%/g, '/100') // replacing
+
+        const calculation = eval(correctedPercentage.join('')); //making array into string and calculation
+        const checkLength = calculation.toString().split('')
+
+        let correctedLength = 0
+        if(checkLength.length > 12){ //fixing the decimal that are greater than length og 12
+          correctedLength = calculation.toFixed(10)
+          
+          setGetBody([correctedLength.toString()]);
+        }
+
+        setGetBody([calculation.toString()])
+        
       }
     } catch (error) {
       setGetBody(["ERROR"]);
+      console.log(error.message);
     }
   };
 
@@ -29,7 +66,7 @@ const Calculator = () => {
 
   const handleUndo = ()=>{
     const body = [...getBody]
-    const undo = body.slice(0,-1)
+    const undo = body.slice(0,-1) //removes last element and return
     setGetBody(undo)
   }
 
