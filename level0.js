@@ -6,7 +6,8 @@ console.log(10%3)
 //Q2. get the percentage scored if the fullmarks is 200
 var comp = 'ram'
 var gk = 88
-console.log((comp+gk)/200*100)
+var fullmarks = 200
+console.log(`${comp} scored ${(gk/fullmarks)*100}`)
 
 //Q3. calculate the area of circle:
 var radius = 98
