@@ -1,11 +1,12 @@
+import ChatUi from "@/components/chat-ui";
 import SideNav from "@/components/side-nav";
 import React from "react";
 
-const layout = ({ childern }) => {
+const layout = ({ children }) => {
   return (
-    <div>
+    <div className="flex flex-row gap-10">
       <SideNav />
-      {childern}
+      {children}
     </div>
   );
 };

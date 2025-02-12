@@ -1,9 +1,11 @@
+import HeroIcon from "@/components/hero-icon";
 import React from "react";
-//HOC
+//HOC: HIgher order component
+
 const layout = ({ children }) => {
   return (
-    <div className="bg-red-500 p-40">
-      <p>XYZ:</p>
+    <div className=" p-40 border shadow-xl m-40">
+      <HeroIcon width={100} />
       {children}
     </div>
   );

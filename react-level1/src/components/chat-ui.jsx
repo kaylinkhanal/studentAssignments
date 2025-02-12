@@ -1,9 +1,14 @@
 import React from 'react'
 
-const ChatUI = () => {
+const ChatUi = ({currentUserDetails}) => {
   return (
-    <div>ChatUI</div>
+    <div><div>
+      </div>
+      {JSON.stringify(currentUserDetails)}
+      {currentUserDetails?.username}
+      {currentUserDetails?.lastSeen}
+      </div>
   )
 }
 
-export default ChatUI
+export default ChatUi
