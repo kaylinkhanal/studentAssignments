@@ -5,7 +5,6 @@ import boxSlice from './features/box/boxSlice'
 
 export const store = configureStore({
   reducer: {
-    counter: counterSlice,
     box: boxSlice
   },
 })
