@@ -6,4 +6,4 @@ const Communities = () => {
   )
 }
 
-export default Communitiese
+export default Communities
