@@ -5,6 +5,7 @@ const Cards = () => {
   const [playerSelect, setPlayerSelect] = useState(null);
   const [computerSelect, setComputerSelect] = useState(null);
   const [shuffledCardDeck, setShuffledCardDeck] = useState([]);
+  const [result, setResult] = useState(null)
 
   const suits = [
     { name: "Spades", symbol: "♠️", power: 4 },
@@ -65,50 +66,63 @@ const Cards = () => {
 
   const compareCard = (playerCard, computerCard) => {
     if (!playerCard || !computerCard) return "Select a card first";
+    if (playerCard.card === computerCard.card) computerPick()
 
     if (playerCard.generalId !== computerCard.generalId) {
-      if (playerCard.suitPower === compareCard.suitPower) {
-        return "It's a Tie"
-      }
       return playerCard.generalId > computerCard.generalId ? "You Win" : "You Lose";
     } else {
       return playerCard.suitPower > computerCard.suitPower ? "You Win" : "You Lose";
-    }
+    } 
   };
 
+  const handleClick = (item) => {
+    setPlayerSelect(item);
+    const computerSelectedCard = computerPick();
+
+    setTimeout(() => {
+      const comparisionResult = compareCard(item, computerSelectedCard);
+      setResult(comparisionResult);
+    }, 100);
+  }
+
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gray-900 p-4">
-      <section className="flex flex-col items-center w-full text-white font-bold text-lg md:text-xl mb-4">
-        <div className="flex flex-col md:flex-row gap-4 md:gap-8 p-2 text-center">
+    <div className="flex flex-col items-center min-h-screen bg-gray-900 p-6 text-white">
+      <h1 className="text-3xl font-bold mb-4 text-yellow-400">Card Battle Game</h1>
+      <section className="flex flex-col items-center w-full text-lg md:text-xl mb-4 p-4 bg-gray-800 rounded-lg shadow-md">
+        <div className="flex flex-col md:flex-row gap-6 text-center">
           <p>You picked: {playerSelect ? playerSelect.card : ""}</p>
           <p>Computer picked: {computerSelect ? computerSelect.card : ""}</p>
         </div>
-        <p className="mt-2 text-yellow-400">
-          {playerSelect && computerSelect ? compareCard(playerSelect, computerSelect) : ""}
-        </p>
+        <p className="mt-2 text-green-400 text-2xl font-semibold">{result}</p>
+        <button 
+          className="mt-4 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all"
+          onClick={() => {
+            setComputerSelect(null)
+            setPlayerSelect(null)
+            setResult(null)
+          }}
+          >Restart
+          </button>
       </section>
 
-      <section className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-2 w-full max-w-4xl">
+      <section className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 w-full max-w-5xl">
         {shuffledCardDeck.map((item) => {
-            const isSelect = (playerSelect && playerSelect.id === item.id) || (computerSelect && computerSelect.id === item.id);
+          const isSelected =
+            (playerSelect && playerSelect.id === item.id) ||
+            (computerSelect && computerSelect.id === item.id);
+
           return (
-          <div
-            className={`bg-blue-400 text-xl flex m-1 p-3 shadow-md w-16 h-20 sm:w-20 sm:h-24 justify-center items-center rounded-lg 
-                ${item.suit === "Spades" || item.suit === "Clubs" ? "text-black" : "text-red-700"} 
-                ${playerSelect && playerSelect.id === item.id ? "bg-green-600" : ""} 
-                ${computerSelect && computerSelect.id === item.id ? "bg-orange-100" : ""}
-                `}
-            key={item.id}
-            onClick={() => {
-              const playerSelectedCard = item;
-              setPlayerSelect(playerSelectedCard);
-              const computerSelectedCard = computerPick();
-              setTimeout(() => compareCard(playerSelectedCard, computerSelectedCard),0);
-            }}
-          >
-            { isSelect ? item.card : ""}
-          </div>
-          )
+            <div
+              key={item.id}
+              className={`relative bg-blue-500 text-xl font-bold flex justify-center items-center w-16 h-24 sm:w-20 sm:h-28 shadow-md rounded-lg transition-transform transform hover:scale-110 cursor-pointer 
+              ${item.suit === "Spades" || item.suit === "Clubs" ? "text-black" : "text-red-700"} 
+              ${playerSelect?.id === item.id ? "bg-purple-300 text-white scale-110" : ""} 
+              ${computerSelect?.id === item.id ? "bg-orange-400 text-white scale-110" : ""}`}
+              onClick={!isSelected ? () => handleClick(item) : undefined}
+            >
+              {isSelected ? item.card : ""}
+            </div>
+          );
         })}
       </section>
     </div>
