@@ -6,8 +6,13 @@ import { store } from './store'
 const ReduxProvider = ({children}) => {
   return (
     <Provider store={store}>
+<<<<<<< HEAD
       {children}
     </Provider>
+=======
+    {children}
+  </Provider>
+>>>>>>> main
   )
 }
 
