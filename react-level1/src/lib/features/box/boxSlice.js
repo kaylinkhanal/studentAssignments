@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 import { createSlice } from "@reduxjs/toolkit";
+=======
+import { createSlice } from '@reduxjs/toolkit'
+>>>>>>> e3af3599ff932c754937472f6c6e6d8c5b4ac347
 
 const initialState = {
   width: 100,
   height: 100,
+<<<<<<< HEAD
   backgroundColor: "red",
   jumping: false,
   x: 0,
@@ -66,3 +71,25 @@ export const {
 } = boxSlice.actions;
 
 export default boxSlice.reducer;
+=======
+  backgroundColor: 'red'
+}
+
+export const boxSlice = createSlice({
+  name: 'box',
+  initialState,
+  reducers: {
+    incrementWidth: (state) => {
+      state.width += 10
+    },
+    incrementHeight: (state) => {
+      state.height -= 10
+    },
+   
+  },
+})
+
+export const { incrementWidth, incrementHeight } = boxSlice.actions
+
+export default boxSlice.reducer
+>>>>>>> e3af3599ff932c754937472f6c6e6d8c5b4ac347
